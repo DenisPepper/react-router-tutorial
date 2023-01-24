@@ -11,15 +11,18 @@ const appRouter = createBrowserRouter([
         path: "/",
         element: <Root/>,
         errorElement: <ErrorPage/>,
+        children: [
+            {
+                path: 'contacts/:contactId',
+                element: <Contact/>
+            },
+        ],
     },
-    {
-      path: 'contacts/:contactId',
-      element: <Contact/>
-    },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-      <RouterProvider router={appRouter} />
-  </React.StrictMode>,
+    <React.StrictMode>
+        <RouterProvider router={appRouter}/>
+    </React.StrictMode>,
 )
