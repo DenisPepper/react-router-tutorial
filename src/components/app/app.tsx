@@ -6,14 +6,16 @@ import {Header} from "../header/header";
 
 export const App = () => {
     return (
-        <BrowserRouter>
-            <Header/>
-            <Routes>
-                <Route path='/' element={<HomePage/>}/>
-                <Route path='/catalog' element={<CatalogPage/>}/>
-            </Routes>
-            <Footer/>
-        </BrowserRouter>
+        <div className='page-wrapper'>
+            <BrowserRouter>
+                <Header/>
+                <Routes>
+                    <Route path='/' element={<HomePage/>}/>
+                    <Route path='/catalog' element={<CatalogPage/>}/>
+                </Routes>
+                <Footer/>
+            </BrowserRouter>
+        </div>
     );
 }
 

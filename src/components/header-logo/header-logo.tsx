@@ -7,7 +7,7 @@ export const HeaderLogo = () => {
             href={AppLink.home}
             aria-label="Переход на главную страницу"
         >
-            Logo
+            <img src='./images/logo.svg' />
         </a>
     );
 }

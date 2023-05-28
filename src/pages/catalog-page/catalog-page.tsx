@@ -1,6 +1,6 @@
 export const CatalogPage = () => {
     return (
-        <main>
+        <main className='page-content container'>
             catalog page
         </main>
     );

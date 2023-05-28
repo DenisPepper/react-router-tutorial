@@ -6,10 +6,11 @@ export const HeaderNav = () => {
 
     return (
         <nav className="main-navigation">
-            <ul>
+            <ul className="main-navigation-list">
                 <HeaderNavLink
                     link={location.pathname === AppPath.Home ? AppLink.stub : AppLink.home}
                     name={'Главная'}
+                    isCurrent
                 />
                 <HeaderNavLink
                     link={location.pathname === AppPath.Home ? AppLink.advantages : AppLink.home}
@@ -28,12 +29,15 @@ export const HeaderNav = () => {
 interface HeaderNavLinkProps {
     link: Link;
     name: string;
+    isCurrent?: boolean;
 }
 
 const HeaderNavLink = (props: HeaderNavLinkProps) => {
-    const {link, name} = props;
+    const {link, name, isCurrent = false} = props;
     return (
-        <li className="main-navigation-item">
+        <li
+            className={`main-navigation-item ${isCurrent && 'main-navigation-item--current'}`}
+        >
             <a
                 className="main-navigation-link"
                 href={link}

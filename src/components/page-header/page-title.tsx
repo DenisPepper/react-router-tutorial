@@ -1,9 +1,9 @@
-interface PageHeader {
+interface PageTitleProps {
     text: string;
     isVisuallyHidden: boolean;
 }
 
-export const PageHeader = (props: PageHeader) => {
+export const PageTitle = (props: PageTitleProps) => {
     const {text, isVisuallyHidden} = props;
 
     return (

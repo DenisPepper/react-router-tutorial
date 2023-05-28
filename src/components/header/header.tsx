@@ -4,7 +4,7 @@ import {HeaderUserMenu} from "../header-user-menu/header-user-menu";
 
 export const Header = () => {
     return (
-        <header>
+        <header className='page-header container'>
             <HeaderLogo />
             <HeaderNav />
             <HeaderUserMenu />
