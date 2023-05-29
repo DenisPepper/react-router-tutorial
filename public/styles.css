@@ -62,11 +62,20 @@ body {
 }
 
 #root {
-    height: 100%;
     width: 1280px;
     margin: 0 auto;
     padding: 0 40px;
     background-clip: content-box;
+}
+
+.page-wrapper {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1200px;
+    grid-template-rows: min-content 1fr 120px;
+    grid-template-areas: "header" "content" "footer";
+    background: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .app-button {
@@ -96,22 +105,28 @@ body {
     background: #756157;
 }
 
-.page-wrapper {
-    height: 100%;
-    display: grid;
-    grid-template-rows: min-content 1fr 120px;
-    grid-template-areas: "header" "content" "footer";
-    background: #FFFFFF;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+.section-primary-title {
+    margin: 0 0 25px 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
 }
 
-.container {
-    padding: 0 70px;
-    display: flex;
+.section-secondary-title {
+    margin: 0;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
 }
 
 .page-header {
     grid-area: header;
+    padding: 0 70px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -224,8 +239,80 @@ body {
     flex-direction: column;
 }
 
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advantage-item {
+    display: flex;
+}
+
+.advantages-title-wrapper {
+    margin-bottom: 21px;
+    padding: 69px 274px;
+}
+
+.advantage-description {
+    width: 400px;
+    height: 385px;
+    padding: 0 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantage-title {
+    margin: 0 0 30px 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.advantage-slogan-wrapper {
+    text-align: center;
+}
+
+.advantage-slogan-wrapper:before {
+    content: '';
+    margin-left: 85px;
+    margin-bottom: 30px;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.advantage-slogan {
+    margin: 0;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #333333;
+}
+
+.advantage-image {
+    width: 800px;
+    height: 385px;
+}
+
+.advantage-image > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .page-footer {
     grid-area: footer;
+    padding: 0 70px;
+    display: flex;
     width: 1200px;
     height: 120px;
     justify-content: space-between;
