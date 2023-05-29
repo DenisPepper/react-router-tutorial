@@ -106,7 +106,7 @@ body {
 }
 
 .section-primary-title {
-    margin: 0 0 25px 0;
+    margin: 0 0 20px 0;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -251,9 +251,17 @@ body {
     display: flex;
 }
 
-.advantages-title-wrapper {
+.advantages-slogan-1 {
     margin-bottom: 21px;
     padding: 69px 274px;
+}
+
+.advantages-slogan-1 .section-primary-title {
+    margin-bottom: 25px;
+}
+
+.advantages-slogan-2 {
+    padding: 64px 347px;
 }
 
 .advantage-description {
@@ -303,7 +311,13 @@ body {
     height: 385px;
 }
 
-.advantage-image > img {
+.advantage-icon {
+    order: -1;
+    margin-bottom: 30px;
+}
+
+.advantage-image > img,
+.advantage-icon > img{
     display: block;
     max-width: 100%;
     height: auto;

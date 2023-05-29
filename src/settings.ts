@@ -26,6 +26,7 @@ export interface IAdvantage {
     title: string;
     slogan: string;
     image?: { src: string, alt: string };
+    icon?: { src: string, alt: string };
 }
 
 export const advantages: IAdvantage[] = [
@@ -53,3 +54,20 @@ export const advantages: IAdvantage[] = [
     },
 ];
 
+export const advantagesWithIcon: IAdvantage[] = [
+    {
+        title: 'Жильё',
+        slogan: 'Рекомендуем пожить в настоящем мотеле, всё как в кино!',
+        icon: {src: './images/motel.svg', alt: 'Дом'}
+    },
+    {
+        title: 'Еда',
+        slogan: 'Всегда заказывайтетоповый фирменный бургер, вы не разочаруетесь!',
+        icon: {src: './images/food.svg', alt: 'Гамбургер'}
+    },
+    {
+        title: 'Сувениры',
+        slogan: 'Не только китайского, но и настоящего местного производства!',
+        icon: {src: './images/box.svg', alt: 'Подарочная коробка'}
+    },
+];

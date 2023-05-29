@@ -5,21 +5,30 @@ interface AdvantageProps {
 }
 
 export const Advantage = (props: AdvantageProps) => {
-    const {advantage} = props;
+    const {advantage : {slogan, title, image, icon}} = props;
 
-    return (
-        <li className={'advantage-item'}>
+    return icon ?
+        <li>
             <div className='advantage-description'>
-                <h3 className='advantage-title'>{advantage.title}</h3>
-                <div className='advantage-slogan-wrapper'>
-                    <p className='advantage-slogan'>{advantage.slogan}</p>
+                <h3 className='advantage-title'>{title}</h3>
+                <p className='advantage-slogan'>{slogan}</p>
+                <div className='advantage-icon'>
+                    <img src={icon.src} alt={icon.alt}/>
                 </div>
             </div>
-            {!!advantage.image &&
+        </li>
+        :
+        <li className={'advantage-item'}>
+            <div className='advantage-description'>
+                <h3 className='advantage-title'>{title}</h3>
+                <div className='advantage-slogan-wrapper'>
+                    <p className='advantage-slogan'>{slogan}</p>
+                </div>
+            </div>
+            {!!image &&
                 <div className='advantage-image'>
-                    <img src={advantage.image.src} alt={advantage.image.alt}/>
+                    <img src={image.src} alt={image.alt}/>
                 </div>
             }
-        </li>
-    );
+        </li>;
 }
