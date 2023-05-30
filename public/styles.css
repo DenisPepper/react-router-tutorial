@@ -95,6 +95,12 @@ body {
     text-transform: uppercase;
 }
 
+.app-button--large {
+    height: 52px;
+    font-size: 20px;
+    line-height: 36px;
+}
+
 .app-button:hover,
 .app-button:focus-visible {
     background: #615048;
@@ -321,6 +327,15 @@ body {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.hotel-search {
+    padding: 96px 304px;
+}
+
+.hotel-search-open-popup {
+    margin: 54px 108px 0;
+    padding: 8px 50px;
 }
 
 .page-footer {
