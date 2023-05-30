@@ -129,6 +129,10 @@ body {
     color: #333333;
 }
 
+.section-title--inverted {
+    color: #FFFFFF;
+}
+
 .page-header {
     grid-area: header;
     padding: 0 70px;
@@ -336,6 +340,11 @@ body {
 .hotel-search-open-popup {
     margin: 54px 108px 0;
     padding: 8px 50px;
+}
+
+.subscribe{
+    padding: 96px 258px 104px;
+    background-image: url('./images/subscribe.jpg');
 }
 
 .page-footer {

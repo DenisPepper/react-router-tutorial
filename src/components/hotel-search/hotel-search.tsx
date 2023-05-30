@@ -12,7 +12,7 @@ export const HotelSearch = () => {
                 cssClass='hotel-search-open-popup app-button--large'
                 aria-label='открыть окно поиска отеля'
             >
-                ПОИСК ГОСТИНИЦЫ В седоне
+                Поиск гостиницы в седоне
             </AppButton>
         </section>
     );
