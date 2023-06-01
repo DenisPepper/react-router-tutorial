@@ -5,7 +5,7 @@ import {Advantage} from "../advantage/advantage";
 export const Advantages = () => {
     return (
         <section className='advantages'>
-            <div className='advantages-slogan-1'>
+            <div className='advantages-title-1'>
                 <SectionTitle
                     primaryHeader='Седона — небольшой городок в Аризоне, заслуживающий большего!'
                     secondaryHeader='Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!'
@@ -16,7 +16,7 @@ export const Advantages = () => {
                 {advantages.map((item) => <Advantage key={item.title} advantage={item}/>)}
             </ul>
 
-            <div className='advantages-slogan-2'>
+            <div className='advantages-title-2'>
                 <SectionTitle
                     primaryHeader='Приезжайте в Седону отдохнуть в комфорте и уюте!'
                     secondaryHeader='Опытный персонал и качественное обслуживание!'

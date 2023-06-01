@@ -261,16 +261,16 @@ body {
     display: flex;
 }
 
-.advantages-slogan-1 {
+.advantages-title-1 {
     margin-bottom: 21px;
     padding: 69px 274px;
 }
 
-.advantages-slogan-1 .section-primary-title {
+.advantages-title-1 .section-primary-title {
     margin-bottom: 25px;
 }
 
-.advantages-slogan-2 {
+.advantages-title-2 {
     padding: 64px 347px;
 }
 
