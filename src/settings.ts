@@ -27,27 +27,33 @@ export interface IAdvantage {
     slogan: string;
     image?: { src: string, alt: string };
     icon?: { src: string, alt: string };
+    descriptionUnderlined?: boolean;
 }
 
 export const advantages: IAdvantage[] = [
     {
+        descriptionUnderlined: true,
         title: 'Настоящий городок',
         slogan: 'Седона — не аттракцион для туристов, там течёт своя жизнь',
         image: {src: './images/advantage-1.jpg', alt: 'Фотография местного пейжаза'}
     },
     {
+        descriptionUnderlined: true,
         title: 'Небольшая площадь',
         slogan: 'Все достопримечательности находятся очень близко',
     },
     {
+        descriptionUnderlined: true,
         title: 'Красивая дорога',
         slogan: 'Ехать в Седону из Лас-Вегаса совсем не скучно!',
     },
     {
+        descriptionUnderlined: true,
         title: 'Мало туристов',
         slogan: 'Большинство едет в Гранд Каньон и толпится там',
     },
     {
+        descriptionUnderlined: true,
         title: 'Там есть мост дьявола',
         slogan: 'Да, по нему можно пройти! Если вы осмелитесь, разумеется',
         image: {src: './images/advantage-2.jpg', alt: 'Фотография каньона'},
@@ -62,7 +68,7 @@ export const advantagesWithIcon: IAdvantage[] = [
     },
     {
         title: 'Еда',
-        slogan: 'Всегда заказывайтетоповый фирменный бургер, вы не разочаруетесь!',
+        slogan: 'Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!',
         icon: {src: './images/food.svg', alt: 'Гамбургер'}
     },
     {
