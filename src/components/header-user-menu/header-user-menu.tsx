@@ -3,23 +3,20 @@ import {AppButton} from "../app-button/app-button";
 export const HeaderUserMenu = () => {
     return (
         <section className={'user-menu'}>
-            <div className='user-menu-icon'>
-                <button
-                    className={'search-button'}
-                    aria-label='поиск по названию отеля'
-                >
-                </button>
-            </div>
+            <button
+                className={'user-menu-icon search-button'}
+                aria-label='поиск по названию отеля'
+            >
+            </button>
 
-            <div className='user-menu-icon'>
-                <a
-                    className={'favorite-link'}
-                    href='#'
-                    aria-label='переход на страницу избранных отелей'
-                >
-                </a>
-                <div className='favorite-counter'><span>12</span></div>
-            </div>
+            <a
+                className={'user-menu-icon favorite-link'}
+                href='#'
+                aria-label='переход на страницу избранных отелей'
+            >
+            </a>
+
+            <div className='favorite-counter'><span>12</span></div>
 
             <AppButton
                 cssClass='user-menu-open-popup'

@@ -194,21 +194,21 @@ body {
 .user-menu-icon {
     width: 44px;
     height: 64px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 22px 12px;
+}
+
+.user-menu-icon:before {
+    width: 20px;
+    height: 20px;
 }
 
 .search-button {
     border: 0;
-    padding: 0;
     background-color: inherit;
     cursor: pointer;
 }
 
 .search-button:before {
-    width: 18px;
-    height: 18px;
     background-image: url('./images/search.svg');
 }
 
@@ -217,16 +217,14 @@ body {
 }
 
 .favorite-link:before {
-    width: 18px;
-    height: 17px;
-    background-image: url('./images/favorite.svg');
+    background-image: url('./images/heart.svg');
 }
 
 .favorite-counter {
     width: 20px;
     height: 20px;
-    margin-left: -10px;
-    margin-top: -10px;
+    margin-top: -24px;
+    margin-left: -24px;
     border-radius: 9999px;
     padding-top: 5px;
     right: 4px;
