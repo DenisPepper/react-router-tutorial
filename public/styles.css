@@ -323,8 +323,10 @@ body {
     color: #333333;
 }
 
-.advantage-slogan--motel {
-    padding: 0 30px;
+.advantage-slogan--split {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .advantage-image {
@@ -354,8 +356,12 @@ body {
 }
 
 .subscribe{
+    width: 1200px;
+    height: 415px;
     padding: 96px 258px 104px;
     background-image: url('./images/subscribe.jpg');
+    background-repeat: no-repeat;
+   background-size: contain;
 }
 
 .page-footer {

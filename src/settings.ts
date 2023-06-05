@@ -24,7 +24,7 @@ export const enum AppPath {
 
 export interface IAdvantage {
     title: string;
-    slogan: string;
+    slogan: string | string[];
     image?: { src: string, alt: string };
     icon?: { src: string, alt: string };
     descriptionUnderlined?: boolean;
@@ -63,17 +63,17 @@ export const advantages: IAdvantage[] = [
 export const advantagesWithIcon: IAdvantage[] = [
     {
         title: 'Жильё',
-        slogan: 'Рекомендуем пожить в настоящем мотеле, всё как в кино!',
+        slogan: ['Рекомендуем пожить', 'в настоящем мотеле,', 'всё как в кино!'],
         icon: {src: './images/motel.svg', alt: 'Дом'}
     },
     {
         title: 'Еда',
-        slogan: 'Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!',
+        slogan: ['Всегда заказывайте', 'топовый фирменный бургер,', 'вы не разочаруетесь!'],
         icon: {src: './images/food.svg', alt: 'Гамбургер'}
     },
     {
         title: 'Сувениры',
-        slogan: 'Не только китайского, но и настоящего местного производства!',
+        slogan: ['Не только китайского,', 'но и настоящего местного', 'производства!'],
         icon: {src: './images/box.svg', alt: 'Подарочная коробка'}
     },
 ];
