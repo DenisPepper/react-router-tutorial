@@ -189,6 +189,9 @@ body {
 .user-menu {
     display: flex;
     align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .user-menu-icon {
@@ -212,6 +215,10 @@ body {
     background-image: url('./images/search.svg');
 }
 
+.favorite-link-wrapper {
+    display: flex;
+}
+
 .favorite-link {
     display: block;
 }
@@ -221,12 +228,12 @@ body {
 }
 
 .favorite-counter {
-    width: 20px;
+    min-width: 20px;
     height: 20px;
-    margin-top: -24px;
+    margin-top: 10px;
     margin-left: -24px;
     border-radius: 9999px;
-    padding-top: 5px;
+    padding: 5px 5px 0  ;
     right: 4px;
     top: 11px;
     font-size: 10px;
@@ -236,10 +243,13 @@ body {
     text-align: center;
 }
 
+.want-here-wrapper {
+    margin-left: 20px;
+}
+
 .user-menu-open-popup {
     width: 160px;
     padding: 8px 34px;
-    margin-left: 20px;
 }
 
 .page-content {
