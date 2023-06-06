@@ -1,7 +1,8 @@
 :root {
+    --background-base: #FFFFFF;
     --text-color-main: #000000;
 
-    --button-color-main: #FFFFFF;;
+    --button-color-main: var(--background-base);
     --button-background-color-main: #756157;
     --button-background-color-optional: #82B3D3;
     --button-background-color-favorite: #7DB54F;
@@ -273,6 +274,33 @@ body {
 .hero-image {
     display: block;
     margin: 0 auto;
+}
+
+.hero-triangle {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 57px solid var(--background-base);
+}
+
+.triangle-left--outer {
+    border-right: 600px solid transparent;
+}
+
+.triangle-left--inner {
+    left: 250px;
+    border-right: 350px solid transparent;
+}
+
+.triangle-right--outer {
+    right: 0;
+    border-left: 600px solid transparent;
+}
+
+.triangle-right--inner {
+    right: 250px;
+    border-left: 350px solid transparent;
 }
 
 .advantages-list {
