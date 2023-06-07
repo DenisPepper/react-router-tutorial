@@ -18,7 +18,7 @@ export const CatalogPage = () => {
 
                 <h2 className='visually-hidden'>Панель отбора гостиниц по фильтрам</h2>
 
-                <form action="#" autoComplete="off">
+                <form style={{display: 'flex'}} action="#" autoComplete="off">
                     <h2 className="visually-hidden">Форма поиска гостиниц города Седона</h2>
 
                     <fieldset>
@@ -107,8 +107,19 @@ export const CatalogPage = () => {
                         </div>
                     </fieldset>
 
-                    <button type="submit">Применить</button>
-                    <button type="reset">Сбросить</button>
+                    <button
+                        className='app-button button--optional filter-submit-button'
+                        type="submit"
+                    >
+                        Применить
+                    </button>
+
+                    <button
+                        className='app-button button--transparent filter-reset-button'
+                        type="reset"
+                    >
+                        Сбросить
+                    </button>
                 </form>
             </section>
 

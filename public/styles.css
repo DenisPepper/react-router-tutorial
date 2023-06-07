@@ -112,28 +112,68 @@ body {
     text-transform: uppercase;
 }
 
-.app-button--favorite {
+.button--favorite {
     background-color: var(--button-background-color-favorite);
 }
 
-.app-button--to-favorite {
+.button--optional {
     background-color: var(--button-background-color-optional);
+}
+
+.button--transparent {
+    background: none;
+    color: #FFFFFF;
+}
+
+.app-button:hover,
+.app-button:focus-visible {
+    background: #615048;
+    outline: none;
+}
+
+.button--favorite:hover,
+.button--favorite:focus-visible {
+    background-color: #6C9E42;
+}
+
+.button--optional:hover,
+.button--optional:focus-visible {
+    background-color: #68A2CA;
+}
+
+.app-button:active,
+.button--favorite:active,
+.button--optional:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.app-button:disabled,
+.button--favorite:disabled,
+.button--optional:disabled {
+    color: #FFFFFF;
+    background: #E5E5E5;
+}
+
+.button--transparent:hover {
+    background: none;
+    opacity: 0.6;
+}
+
+.button--transparent:focus-visible {
+    background: none;
+    color: #FFFFFF;
+    border: 3px solid #83B3D3;
+}
+
+.button--transparent:disabled {
+    background: none;
+    opacity: 0.1;
 }
 
 .app-button--large {
     height: 52px;
     font-size: 20px;
     line-height: 36px;
-}
-
-.app-button:hover,
-.app-button:focus-visible {
-    background: #615048;
-}
-
-.app-button:active {
-    color: rgba(255, 255, 255, 0.3);
-    background: #756157;
 }
 
 .section-primary-title {
@@ -548,10 +588,12 @@ body {
 }
 
 .hotels {
-    padding: 20px;
+    width: 1060px;
+    margin: 0 auto;
 }
 
 .hotels-list {
+    margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
@@ -642,4 +684,10 @@ body {
 .hotel-stars img {
     display: block;
     margin-right: 6px;
+}
+
+.filter-reset-button,
+.filter-submit-button {
+    width: 191px;
+    height: 36px;
 }
