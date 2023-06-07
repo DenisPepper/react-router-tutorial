@@ -3,14 +3,14 @@ import {AppButton} from "../app-button/app-button";
 export const HeaderUserMenu = () => {
     return (
         <ul className='user-menu'>
-            <li>
+            <li className='user-menu-item'>
                 <button
                     className={'user-menu-icon search-button'}
                     aria-label='поиск по названию отеля'
                 >
                 </button>
             </li>
-            <li className='favorite-link-wrapper'>
+            <li className='user-menu-item favorite-link-wrapper'>
                 <a
                     className={'user-menu-icon favorite-link'}
                     href='#'
