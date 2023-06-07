@@ -4,17 +4,19 @@ import {PageTitle} from "../../components/page-header/page-title";
 export const CatalogPage = () => {
     return (
         <main className='page-content'>
+            <div className='catalog-page-title'>
+                <PageTitle text='Гостиницы Седоны' isVisuallyHidden={false}/>
+            </div>
+            <ul className="breadcrumbs">
+                <li><a href="./index.html">Главная</a></li>
+                <li className="breadcrumbs__current">
+                    <a href="./catalog.html">Гостиницы</a>
+                </li>
+            </ul>
             <section className='catalog-filter'>
-                <div className='catalog-page-title'>
-                    <PageTitle text='Гостиницы Седоны' isVisuallyHidden={false}/>
-                </div>
+
                 <h2 className='visually-hidden'>Панель отбора гостиниц по фильтрам</h2>
-                <ul className="breadcrumbs">
-                    <li><a href="./index.html">Главная</a></li>
-                    <li className="breadcrumbs__current">
-                        <a href="./catalog.html">Гостиницы</a>
-                    </li>
-                </ul>
+
                 <form action="#" autoComplete="off">
                     <h2 className="visually-hidden">Форма поиска гостиниц города Седона</h2>
 
