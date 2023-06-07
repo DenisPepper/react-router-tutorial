@@ -1,5 +1,6 @@
 import {Subscribe} from "../../components/subscribe/subscribe";
 import {PageTitle} from "../../components/page-header/page-title";
+import {Hotels} from "../../components/block-cards/hotels/hotels";
 
 export const CatalogPage = () => {
     return (
@@ -111,7 +112,7 @@ export const CatalogPage = () => {
                 </form>
             </section>
 
-            <section className="catalog-block">
+            <div className="catalog-block">
                 <h2 className="visually-hidden">Список гостиниц</h2>
 
                 <div className="catalog-controls">
@@ -136,23 +137,7 @@ export const CatalogPage = () => {
                     </div>
                 </div>
 
-                <ul className="catalog__card-list">
-                    <li className="card">
-                        <div className="card-image">
-                            <img src="#" alt="Отель"/>
-                        </div>
-                        <h3>Amara Resort & Spa</h3>
-                        <dl>
-                            <dt>Гостиница</dt>
-                            <dd>От 4000 ₽</dd>
-                        </dl>
-                        <button type="button">подробнее</button>
-                        <button type="button">в избранное</button>
-                        <div className="rating-block">
-                            <span>Рейтинг: 8,5</span>
-                        </div>
-                    </li>
-                </ul>
+                <Hotels/>
 
                 <ul className="catalog__pagination-list">
                     <li
@@ -170,7 +155,7 @@ export const CatalogPage = () => {
                     </li>
                     <li className="catalog__pagination-item"><a href="#">10</a></li>
                 </ul>
-            </section>
+            </div>
 
             <Subscribe/>
         </main>

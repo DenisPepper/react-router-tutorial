@@ -100,6 +100,14 @@ body {
     text-transform: uppercase;
 }
 
+.app-button--favorite {
+    background-color: var(--button-background-color-favorite);
+}
+
+.app-button--to-favorite {
+    background-color: var(--button-background-color-optional);
+}
+
 .app-button--large {
     height: 52px;
     font-size: 20px;
@@ -507,4 +515,100 @@ body {
 
 .developer-image {
     display: block;
+}
+
+.hotels {
+    padding: 20px;
+}
+
+.hotels-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hotel-item {
+    width: 340px;
+    height: 438px;
+    padding: 20px;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-set {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    gap: 20px;
+}
+
+.hotel-name {
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.hotel-image {
+    order: -1;
+}
+
+.hotel-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.hotel-properties {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.hotel-price {
+    margin: 0;
+    text-align: right;
+}
+
+.hotel-buttons {
+    height: 36px;
+}
+
+.hotel-review {
+    height: 37px;
+}
+
+.hotel-rating {
+    width: 140px;
+    height: 37px;
+    padding-top: 9px;
+    background: #F2F2F2;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hotel-stars {
+    height: 37px;
+    padding: 10px 0;
+    display: flex;
+}
+
+.hotel-stars img {
+    display: block;
+    margin-right: 6px;
 }

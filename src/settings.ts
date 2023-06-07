@@ -77,3 +77,52 @@ export const advantagesWithIcon: IAdvantage[] = [
         icon: {src: './images/box.svg', alt: 'Подарочная коробка'}
     },
 ];
+
+export interface IHotel {
+    image: string;
+    name: string;
+    type: 'Гостиница' | '';
+    minPrice: number;
+    isFavorite: boolean;
+    rating: string;
+    starsCount: number;
+}
+
+export const hotels: IHotel[] = [
+    {
+        image: './images/hotel-1.jpg',
+        name: 'Amara Resort & Spa',
+        type: 'Гостиница',
+        minPrice: 4000,
+        isFavorite: false,
+        rating: '8,5',
+        starsCount: 4,
+    },
+    {
+        image: './images/hotel-2.jpg',
+        name: 'Villas at Poco Diablo',
+        type: 'Гостиница',
+        minPrice: 5000,
+        isFavorite: true,
+        rating: '9,2',
+        starsCount: 4,
+    },
+    {
+        image: './images/hotel-3.jpg',
+        name: 'Desert Quail Inn',
+        type: 'Гостиница',
+        minPrice: 2500,
+        isFavorite: false,
+        rating: '6,9',
+        starsCount: 3,
+    },
+    {
+        image: './images/hotel-4.jpg',
+        name: 'GreenTree Inn',
+        type: 'Гостиница',
+        minPrice: 1500,
+        isFavorite: false,
+        rating: '5,0',
+        starsCount: 2,
+    },
+];
