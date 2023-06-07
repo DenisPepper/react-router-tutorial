@@ -10,7 +10,7 @@ export const HeaderNav = () => {
                 <HeaderNavLink
                     link={location.pathname === AppPath.Home ? AppLink.stub : AppLink.home}
                     name={'Главная'}
-                    isCurrent
+                    isCurrent = {location.pathname === AppPath.Home}
                 />
                 <HeaderNavLink
                     link={location.pathname === AppPath.Home ? AppLink.advantages : AppLink.home}
@@ -19,6 +19,7 @@ export const HeaderNav = () => {
                 <HeaderNavLink
                     link={location.pathname === AppPath.Home ? AppLink.catalog : AppLink.stub}
                     name={'Гостиницы'}
+                    isCurrent = {location.pathname === AppPath.Catalog}
                 />
             </ul>
         </nav>
