@@ -62,7 +62,7 @@ export const advantages: IAdvantage[] = [
     {
         background: "main",
         descriptionUnderlined: true,
-        title: 'Там есть мост дьявола',
+        title: 'Там есть\n мост дьявола',
         slogan: 'Да, по нему можно пройти!\n Если вы осмелитесь,\n разумеется',
         image: {src: './images/advantage-2.jpg', alt: 'Фотография каньона'},
     },

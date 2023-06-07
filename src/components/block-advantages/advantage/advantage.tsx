@@ -4,7 +4,9 @@ const Background:Record<AdvantageBackgroundType, string> = {
     main: 'background--main',
     option: 'background--option',
     'option-lighter': 'background--option-lighter',
-}
+};
+
+const imageModifier = 'advantage-image--before-description';
 
 interface AdvantageProps {
     advantage: IAdvantage;
@@ -28,7 +30,9 @@ export const Advantage = (props: AdvantageProps) => {
                 }
             </div>
             {!!image &&
-                <div className='advantage-image'>
+                <div
+                    className={`advantage-image ${image.src === './images/advantage-2.jpg' ? imageModifier : ''}`}
+                >
                     <img src={image.src} alt={image.alt}/>
                 </div>
             }

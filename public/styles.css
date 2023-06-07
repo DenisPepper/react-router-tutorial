@@ -372,6 +372,7 @@ body {
     color: #000000;
     text-transform: uppercase;
     text-align: center;
+    white-space: pre-line;
     order: -2;
 }
 
@@ -407,6 +408,10 @@ body {
 .advantage-image {
     width: 800px;
     height: 385px;
+}
+
+.advantage-image--before-description {
+    order: -1
 }
 
 .advantage-icon {
