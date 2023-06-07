@@ -1,10 +1,14 @@
 :root {
-    --background-base: #FFFFFF;
+    --background-color-base: #FFFFFF;
+    --background-color-main: #82B3D3;
+    --background-color-additional-1: rgba(131, 179, 211, 0.12);
+    --background-color-additional-2: rgba(131, 179, 211, 0.2);
+    --background-color-fallback: grey;
 
     --text-color-main: #000000;
-    --text-color-inverted: var(--background-base);
+    --text-color-inverted: var(--background-color-base);
 
-    --button-color-main: var(--background-base);
+    --button-color-main: var(--background-color-base);
     --button-background-color-main: #756157;
     --button-background-color-optional: #82B3D3;
     --button-background-color-favorite: #7DB54F;
@@ -24,10 +28,6 @@
     font-weight: 700;
     src: url('./fonts/ptsans-700.woff2') format('woff2');
     font-display: swap;
-}
-
-html {
-    box-sizing: border-box;
 }
 
 html,
@@ -50,7 +50,7 @@ body {
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -180,7 +180,7 @@ body {
     padding: 20px 16px;
 }
 
-.main-navigation-item--current > .main-navigation-link  {
+.main-navigation-item--current > .main-navigation-link {
     text-decoration: underline;
     text-decoration-color: #756257;
     text-decoration-thickness: 2px;
@@ -239,8 +239,8 @@ body {
     height: 20px;
     margin-top: 10px;
     margin-left: -24px;
-    border-radius: 9999px;
-    padding: 5px 5px 0  ;
+    border-radius: 999px;
+    padding: 5px 5px 0;
     right: 4px;
     top: 11px;
     font-size: 10px;
@@ -269,6 +269,7 @@ body {
     height: 485px;
     padding-top: 51px;
     background-image: url('./images/hero-background.jpg');
+    background-color: var(--background-color-fallback);
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
@@ -285,7 +286,7 @@ body {
     bottom: 0;
     width: 0;
     height: 0;
-    border-bottom: 57px solid var(--background-base);
+    border-bottom: 57px solid var(--background-color-base);
 }
 
 .triangle-left--outer {
@@ -385,7 +386,7 @@ body {
 }
 
 .advantage-image > img,
-.advantage-icon > img{
+.advantage-icon > img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -400,13 +401,14 @@ body {
     padding: 8px 50px;
 }
 
-.subscribe{
+.subscribe {
     width: 1200px;
     height: 415px;
     padding: 96px 258px 104px;
     background-image: url('./images/subscribe.jpg');
+    background-color: var(--background-color-fallback);
     background-repeat: no-repeat;
-   background-size: contain;
+    background-size: contain;
 }
 
 .breadcrumbs {
@@ -431,6 +433,7 @@ body {
     height: 412px;
     padding: 35px 70px 70px;
     background-image: url('./images/filter-background.jpg');
+    background-color: var(--background-color-fallback);
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
@@ -505,7 +508,3 @@ body {
 .developer-image {
     display: block;
 }
-
-
-
-
