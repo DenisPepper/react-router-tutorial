@@ -83,6 +83,18 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+.background--main {
+    background-color: var(--background-color-main);
+}
+
+.background--option-lighter {
+    background-color: var(--background-color-additional-1);
+}
+
+.background--option {
+    background-color: var(--background-color-additional-2);
+}
+
 .app-button {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -371,6 +383,15 @@ body {
     height: 2px;
     background-color: rgba(0, 0, 0, 0.3);
     order: -1;
+}
+
+.background--main .advantage-title,
+.background--main .advantage-slogan {
+    color: var(--text-color-inverted);
+}
+
+.background--main .advantage-description--underlined:after {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantage-slogan {

@@ -1,14 +1,22 @@
-import {IAdvantage} from "../../../settings";
+import {AdvantageBackgroundType, IAdvantage} from "../../../settings";
+
+const Background:Record<AdvantageBackgroundType, string> = {
+    main: 'background--main',
+    option: 'background--option',
+    'option-lighter': 'background--option-lighter',
+}
 
 interface AdvantageProps {
     advantage: IAdvantage;
 }
 
 export const Advantage = (props: AdvantageProps) => {
-    const {advantage: {slogan, title, image, icon, descriptionUnderlined}} = props;
+    const {advantage: {slogan, title, image, icon, descriptionUnderlined, background}} = props;
 
     return (
-        <li className={'advantage-item'}>
+        <li
+            className={`advantage-item ${Background[background]}`}
+        >
             <div
                 className={`advantage-description ${descriptionUnderlined ? 'advantage-description--underlined' : ''}`}>
                 <h3 className='advantage-title'>{title}</h3>
