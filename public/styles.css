@@ -1,6 +1,8 @@
 :root {
     --background-base: #FFFFFF;
+
     --text-color-main: #000000;
+    --text-color-inverted: var(--background-base);
 
     --button-color-main: var(--background-base);
     --button-background-color-main: #756157;
@@ -13,6 +15,7 @@
     font-style: normal;
     font-weight: 400;
     src: url('./fonts/ptsans-400.woff2') format('woff2');
+    font-display: swap;
 }
 
 @font-face {
@@ -20,6 +23,7 @@
     font-style: normal;
     font-weight: 700;
     src: url('./fonts/ptsans-700.woff2') format('woff2');
+    font-display: swap;
 }
 
 html {
@@ -367,12 +371,7 @@ body {
     line-height: 21px;
     text-align: center;
     color: #333333;
-}
-
-.advantage-slogan--split {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    white-space: pre-line;
 }
 
 .advantage-image {
@@ -408,6 +407,34 @@ body {
     background-image: url('./images/subscribe.jpg');
     background-repeat: no-repeat;
    background-size: contain;
+}
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.catalog-page-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: var(--text-color-inverted);
+}
+
+.catalog-page-title > h1 {
+    margin: 0;
+}
+
+.catalog-filter {
+    width: 1200px;
+    height: 412px;
+    padding: 35px 70px 70px;
+    background-image: url('./images/filter-background.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
 }
 
 .page-footer {

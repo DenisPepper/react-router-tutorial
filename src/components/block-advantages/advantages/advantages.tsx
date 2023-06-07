@@ -4,7 +4,7 @@ import {Advantage} from "../advantage/advantage";
 
 export const Advantages = () => {
     return (
-        <section className='advantages'>
+        <section className='advantages' id='advantages'>
             <div className='advantages-title-1'>
                 <SectionTitle
                     primaryHeader='Седона — небольшой городок в Аризоне, заслуживающий большего!'

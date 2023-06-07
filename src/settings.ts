@@ -24,7 +24,7 @@ export const enum AppPath {
 
 export interface IAdvantage {
     title: string;
-    slogan: string | string[];
+    slogan: string;
     image?: { src: string, alt: string };
     icon?: { src: string, alt: string };
     descriptionUnderlined?: boolean;
@@ -34,28 +34,28 @@ export const advantages: IAdvantage[] = [
     {
         descriptionUnderlined: true,
         title: 'Настоящий городок',
-        slogan: 'Седона — не аттракцион для туристов, там течёт своя жизнь',
+        slogan: 'Седона — не аттракцион для\n туристов, там течёт своя\n жизнь',
         image: {src: './images/advantage-1.jpg', alt: 'Фотография местного пейжаза'}
     },
     {
         descriptionUnderlined: true,
         title: 'Небольшая площадь',
-        slogan: 'Все достопримечательности находятся очень близко',
+        slogan: 'Все достопримечательности\n находятся очень близко',
     },
     {
         descriptionUnderlined: true,
         title: 'Красивая дорога',
-        slogan: 'Ехать в Седону из Лас-Вегаса совсем не скучно!',
+        slogan: 'Ехать в Седону из Лас-Вегаса\n совсем не скучно!',
     },
     {
         descriptionUnderlined: true,
         title: 'Мало туристов',
-        slogan: 'Большинство едет в Гранд Каньон и толпится там',
+        slogan: 'Большинство едет в Гранд\n Каньон и толпится там',
     },
     {
         descriptionUnderlined: true,
         title: 'Там есть мост дьявола',
-        slogan: 'Да, по нему можно пройти! Если вы осмелитесь, разумеется',
+        slogan: 'Да, по нему можно пройти!\n Если вы осмелитесь,\n разумеется',
         image: {src: './images/advantage-2.jpg', alt: 'Фотография каньона'},
     },
 ];
@@ -63,17 +63,17 @@ export const advantages: IAdvantage[] = [
 export const advantagesWithIcon: IAdvantage[] = [
     {
         title: 'Жильё',
-        slogan: ['Рекомендуем пожить', 'в настоящем мотеле,', 'всё как в кино!'],
+        slogan: 'Рекомендуем пожить\n в настоящем мотеле,\n всё как в кино!',
         icon: {src: './images/motel.svg', alt: 'Дом'}
     },
     {
         title: 'Еда',
-        slogan: ['Всегда заказывайте', 'топовый фирменный бургер,', 'вы не разочаруетесь!'],
+        slogan: 'Всегда заказывайте\n топовый фирменный бургер,\n вы не разочаруетесь!',
         icon: {src: './images/food.svg', alt: 'Гамбургер'}
     },
     {
         title: 'Сувениры',
-        slogan: ['Не только китайского,', 'но и настоящего местного', 'производства!'],
+        slogan: 'Не только китайского,\n но и настоящего местного\n производства!',
         icon: {src: './images/box.svg', alt: 'Подарочная коробка'}
     },
 ];
