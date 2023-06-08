@@ -503,20 +503,16 @@ body {
     list-style: none;
 }
 
-.catalog-page-title {
-    font-weight: 700;
+.catalog-page-title > h1 {
+    margin: 0; font-weight: 700;
     font-size: 60px;
     line-height: 78px;
     color: var(--text-color-inverted);
 }
 
-.catalog-page-title > h1 {
-    margin: 0;
-}
-
-.catalog-filter {
-    width: 1200px;
-    height: 412px;
+.filter-wrapper {
+    max-width: 1200px;
+    min-height: 412px;
     padding: 35px 70px 70px;
     background-image: url('./images/filter-background.jpg');
     background-color: var(--background-color-fallback);
@@ -524,6 +520,10 @@ body {
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
+}
+
+.filter {
+
 }
 
 .page-footer {
@@ -612,7 +612,7 @@ body {
 
 .hotel-item {
     width: 340px;
-    height: 438px;
+    min-height: 438px;
     padding: 20px;
     border: 1px solid #E6E6E6;
     border-radius: 4px;
