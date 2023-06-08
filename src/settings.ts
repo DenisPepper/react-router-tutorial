@@ -137,3 +137,15 @@ export const hotels: IHotel[] = [
         starsCount: 2,
     },
 ];
+
+export interface IFeature {
+    name: string;
+    view: string;
+    isChecked: boolean;
+}
+
+export const features: IFeature[] = [
+    {name: 'pool', view: 'Бассейн', isChecked: true},
+    {name: 'parking', view: 'Парковка', isChecked: true},
+    {name: 'wifi', view: 'Wi-Fi', isChecked: false},
+];

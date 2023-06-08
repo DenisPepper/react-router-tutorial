@@ -2,6 +2,7 @@ import {Subscribe} from "../../components/subscribe/subscribe";
 import {PageTitle} from "../../components/page-header/page-title";
 import {Hotels} from "../../components/block-cards/hotels/hotels";
 import {Breadcrumbs} from "../../components/breadcrumbs/breadcrumbs";
+import {Filter} from "../../components/block-filter/filter/filter";
 
 export const CatalogPage = () => {
     return (
@@ -15,11 +16,7 @@ export const CatalogPage = () => {
 
                 <Breadcrumbs/>
 
-                <section className='filter'>
-
-                    <h2 className='visually-hidden'>Панель отбора гостиниц по фильтрам</h2>
-
-                </section>
+                <Filter />
 
             </div>
 

@@ -16,6 +16,7 @@
     --page-header-min-height: 64px;
     --page-footer-min-height: 120px;
 
+    --icon-checkbox-checked: url('./images/checked.svg');
 }
 
 @font-face {
@@ -518,7 +519,7 @@ body {
 }
 
 .breadcrumbs {
-    margin: 0;
+    margin: 0 0 40px;
     padding: 0;
     list-style: none;
     display: flex;
@@ -556,6 +557,97 @@ body {
     width: 12px;
     height: 12px;
     background: url('./images/home.svg') no-repeat;
+}
+
+.filter-set {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+.filter-set legend {
+    margin: 0 0 32px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.filter-set-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.checkbox {
+    padding-left: 36px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    position: relative;
+    transition: opacity 300ms ease;
+}
+
+.checkbox:hover {
+    opacity: 0.6;
+}
+
+.checkbox:active {
+    opacity: 0.3;
+}
+
+.checkbox-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.checkbox-icon {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: var(--background-color-base);
+    cursor: pointer;
+}
+
+.checkbox-icon:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: var(--icon-checkbox-checked);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 250ms ease;
+}
+
+.checkbox-icon,
+.checkbox-view {
+    cursor: pointer;
+}
+
+.checkbox-input:checked + .checkbox-icon:before {
+    opacity: 1;
+}
+
+.checkbox-input:focus-visible + .checkbox-icon {
+    outline: 3px solid #83B3D3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.checkbox-input:active + .checkbox-icon {
+    outline: 2px solid #83B3D3;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
 }
 
 .page-footer {
@@ -725,6 +817,10 @@ body {
 .hotel-stars img {
     display: block;
     margin-right: 6px;
+}
+
+.filter {
+    display: flex;
 }
 
 .filter-reset-button,
