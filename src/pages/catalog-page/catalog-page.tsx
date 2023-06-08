@@ -1,6 +1,7 @@
 import {Subscribe} from "../../components/subscribe/subscribe";
 import {PageTitle} from "../../components/page-header/page-title";
 import {Hotels} from "../../components/block-cards/hotels/hotels";
+import {AppLink} from "../../settings";
 
 export const CatalogPage = () => {
     return (
@@ -13,9 +14,9 @@ export const CatalogPage = () => {
             </div>
 
             <ul className="breadcrumbs">
-                <li><a href="./index.html">Главная</a></li>
+                <li><a href={AppLink.home}>Главная</a></li>
                 <li className="breadcrumbs__current">
-                    <a href="./catalog.html">Гостиницы</a>
+                    <a href={AppLink.catalog}>Гостиницы</a>
                 </li>
             </ul>
 
