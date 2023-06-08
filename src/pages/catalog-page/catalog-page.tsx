@@ -1,7 +1,7 @@
 import {Subscribe} from "../../components/subscribe/subscribe";
 import {PageTitle} from "../../components/page-header/page-title";
 import {Hotels} from "../../components/block-cards/hotels/hotels";
-import {AppLink} from "../../settings";
+import {Breadcrumbs} from "../../components/breadcrumbs/breadcrumbs";
 
 export const CatalogPage = () => {
     return (
@@ -9,22 +9,17 @@ export const CatalogPage = () => {
 
             <div className='filter-wrapper'>
 
-            <div className='catalog-page-title'>
-                <PageTitle text='Гостиницы Седоны' isVisuallyHidden={false}/>
-            </div>
+                <div className='catalog-page-title'>
+                    <PageTitle text='Гостиницы Седоны' isVisuallyHidden={false}/>
+                </div>
 
-            <ul className="breadcrumbs">
-                <li><a href={AppLink.home}>Главная</a></li>
-                <li className="breadcrumbs__current">
-                    <a href={AppLink.catalog}>Гостиницы</a>
-                </li>
-            </ul>
+                <Breadcrumbs/>
 
-            <section className='filter'>
+                <section className='filter'>
 
-                <h2 className='visually-hidden'>Панель отбора гостиниц по фильтрам</h2>
+                    <h2 className='visually-hidden'>Панель отбора гостиниц по фильтрам</h2>
 
-            </section>
+                </section>
 
             </div>
 
