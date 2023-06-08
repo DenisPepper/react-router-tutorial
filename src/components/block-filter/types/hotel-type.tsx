@@ -1,12 +1,12 @@
-import {IFeature} from "../../../settings";
+import {IHotelType} from "../../../settings";
 import {useEffect, useRef} from "react";
 
-interface FeatureProps {
-    feature: IFeature;
+interface HotelTypeProps {
+    hotelType: IHotelType;
 }
 
-export const Feature = (props: FeatureProps) => {
-    const {feature: {name, view, isChecked, value}} = props;
+export const  HotelType = (props: HotelTypeProps) => {
+    const {hotelType: {name, value, view, isChecked}} = props;
     const ref = useRef<HTMLInputElement | null>(null);
 
     useEffect(() => {
@@ -17,12 +17,12 @@ export const Feature = (props: FeatureProps) => {
         <label className='form-input'>
             <input
                 className='input'
-                type="checkbox"
+                type="radio"
                 name={name}
-                value={value}
                 ref={ref}
+                value={value}
             />
-            <span className='input-icon checkbox-icon'></span>
+            <span className='input-icon radio-icon'></span>
             <span className='input-view'>{view}</span>
         </label>
     );

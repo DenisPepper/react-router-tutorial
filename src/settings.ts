@@ -142,10 +142,24 @@ export interface IFeature {
     name: string;
     view: string;
     isChecked: boolean;
+    value: string;
 }
 
 export const features: IFeature[] = [
-    {name: 'pool', view: 'Бассейн', isChecked: true},
-    {name: 'parking', view: 'Парковка', isChecked: true},
-    {name: 'wifi', view: 'Wi-Fi', isChecked: false},
+    {name: 'feature', value: 'pool', view: 'Бассейн', isChecked: true},
+    {name: 'feature', value: 'parking', view: 'Парковка', isChecked: true},
+    {name: 'feature', value: 'wifi', view: 'Wi-Fi', isChecked: false},
+];
+
+export interface IHotelType {
+    name: string;
+    value: string;
+    isChecked: boolean;
+    view: string;
+}
+
+export const hotelTypes: IHotelType[] = [
+    {name: 'hotel-type', value: 'hotel', view: 'Гостиница', isChecked: true},
+    {name: 'hotel-type', value: 'motel', view: 'Мотель', isChecked: false},
+    {name: 'hotel-type', value: 'apartments', view: 'Апартаменты', isChecked: false},
 ];

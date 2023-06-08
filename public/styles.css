@@ -116,6 +116,7 @@ body {
     color: var(--button-color-main);
     background-color: var(--button-background-color-main);
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .button--selected {
@@ -559,6 +560,21 @@ body {
     background: url('./images/home.svg') no-repeat;
 }
 
+.filter-form {
+    display: flex;
+    gap: 70px;
+}
+
+.filter-reset-button,
+.filter-submit-button {
+    width: 191px;
+    height: 36px;
+}
+
+.filter-buttons {
+    padding-top: 56px;
+}
+
 .filter-set {
     margin: 0;
     border: none;
@@ -581,7 +597,11 @@ body {
     gap: 16px;
 }
 
-.checkbox {
+.price-wrapper {
+    margin-left: auto;
+}
+
+.form-input {
     padding-left: 36px;
     font-weight: 400;
     font-size: 18px;
@@ -591,29 +611,36 @@ body {
     transition: opacity 300ms ease;
 }
 
-.checkbox:hover {
+.form-input:hover {
     opacity: 0.6;
 }
 
-.checkbox:active {
+.form-input:active {
     opacity: 0.3;
 }
 
-.checkbox-input {
+.input {
     position: absolute;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
 
-.checkbox-icon {
+.input-icon {
     position: absolute;
     left: 0;
     width: 20px;
     height: 20px;
-    border-radius: 4px;
     background-color: var(--background-color-base);
     cursor: pointer;
+}
+
+.checkbox-icon {
+    border-radius: 4px;
+}
+
+.radio-icon {
+    border-radius: 50%;
 }
 
 .checkbox-icon:before {
@@ -629,22 +656,44 @@ body {
     transition: opacity 250ms ease;
 }
 
-.checkbox-icon,
-.checkbox-view {
+.radio-icon:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: #3F5E72;
+    opacity: 0;
+    transition: opacity 250ms ease;
+}
+
+.input-icon,
+.input-view {
     cursor: pointer;
 }
 
-.checkbox-input:checked + .checkbox-icon:before {
+.input:checked + .input-icon:before {
     opacity: 1;
 }
 
-.checkbox-input:focus-visible + .checkbox-icon {
+.input:focus-visible + .input-icon {
     outline: 3px solid #83B3D3;
+    outline-offset: 1px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.input:focus-visible + .checkbox-icon {
     border-radius: 5px;
 }
 
-.checkbox-input:active + .checkbox-icon {
+.input:focus-visible + .radio-icon {
+    border-radius: 17px;
+}
+
+.input:active + .checkbox-icon {
     outline: 2px solid #83B3D3;
     box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
@@ -817,14 +866,4 @@ body {
 .hotel-stars img {
     display: block;
     margin-right: 6px;
-}
-
-.filter {
-    display: flex;
-}
-
-.filter-reset-button,
-.filter-submit-button {
-    width: 191px;
-    height: 36px;
 }
