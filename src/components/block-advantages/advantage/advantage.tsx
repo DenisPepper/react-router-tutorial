@@ -1,12 +1,12 @@
 import {AdvantageBackgroundType, IAdvantage} from "../../../settings";
 
 const Background:Record<AdvantageBackgroundType, string> = {
-    main: 'background--main',
-    option: 'background--option',
-    'option-lighter': 'background--option-lighter',
+    main: 'bg--main',
+    option: 'bg--option',
+    'option-lighter': 'bg--option-lighter',
 };
 
-const imageModifier = 'advantage-image--before-description';
+const imageModifier = 'advantage-image--before';
 
 interface AdvantageProps {
     advantage: IAdvantage;

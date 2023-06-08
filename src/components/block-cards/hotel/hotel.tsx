@@ -28,7 +28,7 @@ export const Hotel = (props: HotelProps) => {
                     подробнее
                 </button>
                 <button
-                    className={`app-button ${isFavorite ? 'button--favorite' : 'button--optional'}`}
+                    className={`app-button ${isFavorite ? 'button--selected' : 'button--optional'}`}
                     type="button"
                 >
                     {isFavorite ? 'в избранном' : 'в избранное'}
