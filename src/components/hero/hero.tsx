@@ -1,3 +1,5 @@
+const imgUrl = './images/welcome.svg';
+
 export const Hero = () => {
     return (
         <section className='hero'>
@@ -5,8 +7,8 @@ export const Hero = () => {
 
             <img
                 className='hero-image'
-                src='./images/welcome.svg'
-                alt='Надпись: Добро пожаловать в восхитительную Седону, которая лучше, чем Гранд-Каньён'
+                src={imgUrl}
+                alt='Добро пожаловать в восхитительную Седону, которая лучше, чем Гранд-Каньён'
                 width='458'
                 height='352'
             />
