@@ -25,10 +25,16 @@ export const Filter = () => {
                     </div>
                 </fieldset>
 
-                <fieldset className='filter-set price-wrapper'>
+                <fieldset className='filter-set filter-set--extra'>
                     <legend>Стоимость, ₽:</legend>
                     <div className='filter-set-wrapper'>
                         <Price />
+                        <div className='price-slider-wrapper'>
+                            <div className='slider-element slider-point'></div>
+                            <div className='slider-element slider-point slider-point--second'></div>
+                            <div className='slider-element slider-axis slider-axis--second'></div>
+                            <div className='slider-element slider-axis'></div>
+                        </div>
                     </div>
                 </fieldset>
 
