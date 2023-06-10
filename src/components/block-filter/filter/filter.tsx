@@ -1,6 +1,7 @@
 import {features, hotelTypes} from "../../../settings";
 import {Feature} from "../features/feature";
 import {HotelType} from "../types/hotel-type";
+import {Price} from "../price/price";
 
 export const Filter = () => {
     return (
@@ -27,7 +28,7 @@ export const Filter = () => {
                 <fieldset className='filter-set price-wrapper'>
                     <legend>Стоимость, ₽:</legend>
                     <div className='filter-set-wrapper'>
-
+                        <Price />
                     </div>
                 </fieldset>
 
@@ -36,7 +37,7 @@ export const Filter = () => {
                     <div className='filter-set-wrapper filter-buttons'>
                         <button
                             type='submit'
-                            className='app-button button--optional filter-reset-button'
+                            className='app-button button--optional filter-submit-button'
                             aria-label='Применить фильтр'
                         >
                             Применить
@@ -44,7 +45,7 @@ export const Filter = () => {
 
                         <button
                             type='reset'
-                            className='app-button button--transparent filter-submit-button'
+                            className='app-button button--transparent filter-reset-button'
                             aria-label='Очистить фильтр'
                         >
                             Сбросить
