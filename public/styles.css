@@ -327,6 +327,7 @@ body {
     color: #FFFFFF;
     background-color: #7DB54F;
     text-align: center;
+    z-index: 1;
 }
 
 .want-here-wrapper {
