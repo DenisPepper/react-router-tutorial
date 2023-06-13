@@ -978,3 +978,40 @@ input[type=number] {
     width: 287px;
     opacity: 0.3;
 }
+
+.pagination-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.pagination-item {
+    width: 60px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    background: #82B3D3;
+    border-radius: 4px;
+
+}
+
+.pagination-item--current {
+    background-color: #F2F2F2;
+    color: #000000;
+}
+
+.pagination-link {
+    display: inline-block;
+    padding-top: 12px;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color: inherit;
+}

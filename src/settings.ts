@@ -163,3 +163,32 @@ export const hotelTypes: IHotelType[] = [
     {name: 'hotel-type', value: 'motel', view: 'Мотель', isChecked: false},
     {name: 'hotel-type', value: 'apartments', view: 'Апартаменты', isChecked: false},
 ];
+
+export interface IPagination {
+    value: string;
+    isCurrent?: boolean;
+    isDotted?: boolean;
+}
+
+export const paginationItems: IPagination[] = [
+    {
+        value: '1',
+        isCurrent: true,
+    },
+    {
+        value: '2',
+    },
+    {
+        value: '3',
+    },
+    {
+        value: '4',
+    },
+    {
+        value: '...',
+        isDotted: true,
+    },
+    {
+        value: '10',
+    },
+];

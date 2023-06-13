@@ -3,6 +3,7 @@ import {PageTitle} from "../../components/page-header/page-title";
 import {Hotels} from "../../components/block-cards/hotels/hotels";
 import {Breadcrumbs} from "../../components/breadcrumbs/breadcrumbs";
 import {Filter} from "../../components/block-filter/filter/filter";
+import {Pagination} from "../../components/pagination/pagination";
 
 export const CatalogPage = () => {
     return (
@@ -47,22 +48,7 @@ export const CatalogPage = () => {
 
                 <Hotels/>
 
-                <ul className="catalog__pagination-list">
-                    <li
-                        className="catalog__pagination-item catalog__pagination-item--current"
-                    >
-                        <a href="#">1</a>
-                    </li>
-                    <li className="catalog__pagination-item"><a href="#">2</a></li>
-                    <li className="catalog__pagination-item"><a href="#">3</a></li>
-                    <li className="catalog__pagination-item"><a href="#">4</a></li>
-                    <li
-                        className="catalog__pagination-item catalog__pagination-item--delimiter"
-                    >
-                        ...
-                    </li>
-                    <li className="catalog__pagination-item"><a href="#">10</a></li>
-                </ul>
+                <Pagination />
             </div>
 
             <Subscribe/>
