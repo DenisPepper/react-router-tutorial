@@ -7,12 +7,12 @@ interface PaginationItemProps {
 export const PaginationItem = (props: PaginationItemProps) => {
     const {item: {value, isCurrent, isDotted}} = props;
 
-    const currentModifier = isCurrent ? 'pagination-item--current' : '';
-    const dottedModifier = isDotted ? 'pagination-item--dotted' : '';
+    const currentModifier = isCurrent ? 'pagination-link--current' : '';
+    const dottedModifier = isDotted ? 'pagination-link--dotted' : '';
 
     return (
-        <li className={`pagination-item ${currentModifier} ${dottedModifier}`}>
-            <a className='pagination-link' href='#' >
+        <li className='pagination-item'>
+            <a className={`pagination-link ${currentModifier} ${dottedModifier}`} href='#' >
                 {value}
             </a>
         </li>
