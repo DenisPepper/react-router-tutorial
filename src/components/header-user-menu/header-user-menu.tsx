@@ -1,4 +1,5 @@
 import {AppButton} from "../app-button/app-button";
+import {FavoriteCounter} from "../favorite-counter/favorite-counter";
 
 export const HeaderUserMenu = () => {
     return (
@@ -17,12 +18,7 @@ export const HeaderUserMenu = () => {
                     aria-label='переход на страницу избранных отелей'
                 >
                 </a>
-                <div
-                    className='favorite-counter'
-                    aria-label='количество отелей в избранном'
-                >
-                    <span>12</span>
-                </div>
+                <FavoriteCounter />
             </li>
             <li className='want-here-wrapper'>
                 <AppButton
