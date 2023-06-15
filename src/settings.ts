@@ -38,32 +38,32 @@ export const advantages: IAdvantage[] = [
         background: "main",
         descriptionUnderlined: true,
         title: 'Настоящий городок',
-        slogan: 'Седона — не аттракцион для\n туристов, там течёт своя\n жизнь',
+        slogan: 'Седона — не аттракцион для туристов, там течёт своя жизнь',
         image: {src: './images/advantage-1.jpg', alt: 'Фотография местного пейжаза'}
     },
     {
         background: "option-lighter",
         descriptionUnderlined: true,
         title: 'Небольшая площадь',
-        slogan: 'Все достопримечательности\n находятся очень близко',
+        slogan: 'Все достопримечательности находятся очень близко',
     },
     {
         background: "option",
         descriptionUnderlined: true,
         title: 'Красивая дорога',
-        slogan: 'Ехать в Седону из Лас-Вегаса\n совсем не скучно!',
+        slogan: 'Ехать в Седону из Лас-Вегаса совсем не скучно!',
     },
     {
         background: "option-lighter",
         descriptionUnderlined: true,
         title: 'Мало туристов',
-        slogan: 'Большинство едет в Гранд\n Каньон и толпится там',
+        slogan: 'Большинство едет в Гранд Каньон и толпится там',
     },
     {
         background: "main",
         descriptionUnderlined: true,
-        title: 'Там есть\n мост дьявола',
-        slogan: 'Да, по нему можно пройти!\n Если вы осмелитесь,\n разумеется',
+        title: 'Там есть мост дьявола',
+        slogan: 'Да, по нему можно пройти! Если вы осмелитесь, разумеется',
         image: {src: './images/advantage-2.jpg', alt: 'Фотография каньона'},
     },
 ];
@@ -72,19 +72,19 @@ export const advantagesWithIcon: IAdvantage[] = [
     {
         background: "option",
         title: 'Жильё',
-        slogan: 'Рекомендуем пожить\n в настоящем мотеле,\n всё как в кино!',
+        slogan: 'Рекомендуем пожить в настоящем мотеле, всё как в кино!',
         icon: {src: './images/motel.svg', alt: 'Дом'}
     },
     {
         background: "option-lighter",
         title: 'Еда',
-        slogan: 'Всегда заказывайте\n топовый фирменный бургер,\n вы не разочаруетесь!',
+        slogan: 'Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!',
         icon: {src: './images/food.svg', alt: 'Гамбургер'}
     },
     {
         background: "option",
         title: 'Сувениры',
-        slogan: 'Не только китайского,\n но и настоящего местного\n производства!',
+        slogan: 'Не только китайского, но и настоящего местного производства!',
         icon: {src: './images/box.svg', alt: 'Подарочная коробка'}
     },
 ];
@@ -190,5 +190,26 @@ export const paginationItems: IPagination[] = [
     },
     {
         value: '10',
+    },
+];
+
+export type UserActionsIcon = './images/search.svg' | './images/heart.svg';
+
+export interface IUserAction {
+    innerObject: 'button' | 'anchor';
+    icon?: UserActionsIcon;
+    ariaLabel?: string;
+}
+
+export const userActions: IUserAction[] = [
+    {
+        icon: './images/search.svg',
+        innerObject: 'button',
+        ariaLabel: 'Найти отель по названию',
+    },
+    {
+        icon: './images/heart.svg',
+        innerObject: 'anchor',
+        ariaLabel: 'Перейти на страницу избранных отелей',
     },
 ];
