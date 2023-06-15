@@ -416,7 +416,6 @@ img {
 
 .advantage--with-icon {
     padding: 183px 85px 81px;
-    justify-content: flex-start;
 }
 
 .advantage-title {
@@ -470,8 +469,6 @@ img {
 }
 
 .advantage-icon {
-    order: -3;
-    margin-bottom: 30px;
     position: absolute;
     top: 79px;
 }
@@ -1063,11 +1060,11 @@ input[type=number] {
     border: 0;
     background-color: inherit;
     cursor: pointer;
-    transition: transform 150ms linear;
+    transition: transform 150ms ease;
 }
 
 .user-action:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 .user-action:before {
