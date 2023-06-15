@@ -20,8 +20,7 @@ export const Advantage = (props: AdvantageProps) => {
             className={`advantage-item ${Background[background]}`}
         >
             <div
-                className={`advantage-description 
-                ${descriptionUnderlined ? 'advantage-description--underlined' : 'advantage-description--with-icon'}`}>
+                className={`advantage ${descriptionUnderlined ? 'advantage--underlined' : 'advantage--with-icon'}`}>
                 <h3 className='advantage-title'>{title}</h3>
                 <p className='advantage-slogan'>{slogan}</p>
                 {!!icon &&
