@@ -1,10 +1,10 @@
 export const FavoriteCounter = () => {
     return (
-        <div
+        <span
             className='favorite-counter'
             aria-label='количество отелей в избранном'
         >
             12
-        </div>
+        </span>
     );
 }
