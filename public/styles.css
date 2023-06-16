@@ -335,15 +335,13 @@ img {
 }
 
 .hero {
-    width: 1200px;
-    height: 485px;
+    min-height: 485px;
     padding-top: 51px;
     background-image: url('./images/hero-background.jpg');
     background-color: var(--background-color-fallback);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative;
-    z-index: 1;
 }
 
 .hero-image {
@@ -351,29 +349,33 @@ img {
     margin: 0 auto;
 }
 
-.hero-triangle {
+.hero-figure {
     position: absolute;
     bottom: 0;
     width: 0;
     height: 0;
-    border-bottom: 57px solid var(--background-color-base);
 }
 
-.triangle-left--outer {
+[class*='triangle'] {
+    border-bottom: 57px solid var(--background-color-base);
+    z-index: 2;
+}
+
+.triangle--left-outer {
     border-right: 600px solid transparent;
 }
 
-.triangle-left--inner {
+.triangle--left-inner {
     left: 250px;
     border-right: 350px solid transparent;
 }
 
-.triangle-right--outer {
+.triangle--right-outer {
     right: 0;
     border-left: 600px solid transparent;
 }
 
-.triangle-right--inner {
+.triangle--right-inner {
     right: 250px;
     border-left: 350px solid transparent;
 }
@@ -404,7 +406,7 @@ img {
 }
 
 .advantage {
-    width: 400px;
+    flex-basis: 400px;
     min-height: 385px;
     padding: 85px;
     display: flex;
@@ -460,8 +462,12 @@ img {
 }
 
 .advantage-image {
-    width: 800px;
-    height: 385px;
+    max-width: 800px;
+    object-fit: cover;
+}
+
+.advantage-image {
+
 }
 
 .advantage-image--before {

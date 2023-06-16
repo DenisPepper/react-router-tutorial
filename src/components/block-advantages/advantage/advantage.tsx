@@ -30,11 +30,11 @@ export const Advantage = (props: AdvantageProps) => {
                 }
             </div>
             {!!image &&
-                <div
-                    className={`advantage-image ${image.src === './images/advantage-2.jpg' ? imageModifier : ''}`}
-                >
-                    <img src={image.src} alt={image.alt}/>
-                </div>
+                    <img
+                        className={`advantage-image ${image.src === './images/advantage-2.jpg' ? imageModifier : ''}`}
+                        src={image.src}
+                        alt={image.alt}
+                    />
             }
         </li>);
 }
