@@ -1134,7 +1134,7 @@ input[type=number] {
 
 .user-action--favorites-counter {
     position: absolute;
-    margin-top: 10px;
+    top: 10px;
     margin-left: -24px;
     z-index: 1;
 }
