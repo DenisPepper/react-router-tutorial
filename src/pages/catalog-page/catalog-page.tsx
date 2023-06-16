@@ -21,7 +21,7 @@ export const CatalogPage = () => {
 
             </div>
 
-            <div className="catalog-block">
+            <div>
                 <h2 className="visually-hidden">Список гостиниц</h2>
 
                 <div className="catalog-controls">
