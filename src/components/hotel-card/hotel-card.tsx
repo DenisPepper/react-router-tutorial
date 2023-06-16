@@ -37,9 +37,15 @@ export const HotelCard = (props: HotelProps) => {
             <div className='hotel-stars'>
                 {
                     Array.from({length: starsCount}).map(
-                        () => <img src='./images/rating-star.svg'/>
+                        () =>
+                            <svg className='star' aria-hidden='true' width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
+                                      fill="#83B3D3"/>
+                            </svg>
                     )
                 }
+                <span className="visually-hidden">{`Количество звезд отеля: ${starsCount}`}</span>
             </div>
 
             <div className='hotel-rating'>

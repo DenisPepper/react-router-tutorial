@@ -898,8 +898,7 @@ img {
     display: flex;
 }
 
-.hotel-stars img {
-    display: block;
+.star {
     margin-right: 6px;
 }
 
