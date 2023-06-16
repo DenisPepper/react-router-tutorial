@@ -13,10 +13,10 @@ export const Hero = () => {
                 height='352'
             />
 
-            <div className='hero-triangle triangle-left--outer'></div>
-            <div className='hero-triangle triangle-left--inner'></div>
-            <div className='hero-triangle triangle-right--outer'></div>
-            <div className='hero-triangle triangle-right--inner'></div>
+            <div className='hero-figure triangle--left-outer'></div>
+            <div className='hero-figure triangle--left-inner'></div>
+            <div className='hero-figure triangle--right-outer'></div>
+            <div className='hero-figure triangle--right-inner'></div>
         </section>
     );
 }
