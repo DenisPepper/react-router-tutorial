@@ -17,10 +17,10 @@ export const Advantage = (props: AdvantageProps) => {
 
     return (
         <li
-            className={`advantage-item ${Background[background]}`}
+            className='advantage-item'
         >
             <div
-                className={`advantage ${descriptionUnderlined ? 'advantage--underlined' : 'advantage--with-icon'}`}>
+                className={`advantage ${Background[background]} ${descriptionUnderlined ? 'advantage--underlined' : 'advantage--with-icon'}`}>
                 <h3 className='advantage-title'>{title}</h3>
                 <p className='advantage-slogan'>{slogan}</p>
                 {!!icon &&
@@ -34,6 +34,7 @@ export const Advantage = (props: AdvantageProps) => {
                         className={`advantage-image ${image.src === './images/advantage-2.jpg' ? imageModifier : ''}`}
                         src={image.src}
                         alt={image.alt}
+                        width='800'
                     />
             }
         </li>);

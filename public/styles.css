@@ -1,5 +1,6 @@
 :root {
     --color-black: #000000;
+    --color-black-opacity-03: rgba(0, 0, 0, 0.3);
     --color-gray: #333333;
     --color-gray-lighter: #E5E5E5;
     --color-white: #FFFFFF;
@@ -391,6 +392,7 @@ img {
 }
 
 .advantage-item {
+    min-width: 400px;
     display: flex;
 }
 
@@ -441,7 +443,7 @@ img {
     display: block;
     width: 60px;
     height: 2px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--color-black-opacity-03);
     order: -1;
 }
 
@@ -450,7 +452,7 @@ img {
     color: var(--color-white);
 }
 
-.bg--main .advantage--underlined:after {
+.bg--main.advantage--underlined:after {
     background-color: var(--color-white-opacity-03);
 }
 
@@ -464,7 +466,6 @@ img {
 }
 
 .advantage-image {
-    flex-basis: 800px;
     max-width: 800px;
     object-fit: cover;
 }
