@@ -4,13 +4,13 @@
     --color-gray: #333333;
     --color-gray-lighter: #E5E5E5;
     --color-white: #FFFFFF;
-    --color-white-alter:#F2F2F2;
+    --color-white-alter: #F2F2F2;
     --color-white-opacity-03: rgba(255, 255, 255, 0.3);
     --color-error: #FF5757;
     --color-brown: #756157;
-    --color-blue:#82B3D3;
+    --color-blue: #82B3D3;
     --color-blue-alter: #83B3D3;
-    --color-blue-dark:#3F5E72;
+    --color-blue-dark: #3F5E72;
     --color-blue-opacity-012: rgba(131, 179, 211, 0.12);
     --color-blue-opacity-02: rgba(131, 179, 211, 0.2);
     --color-green: #7DB54F;
@@ -387,13 +387,17 @@ img {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .advantage-item {
     min-width: 400px;
     display: flex;
+}
+
+.advantage-item--imaged {
+    grid-column: 1 / -1;
 }
 
 .advantages-title-1 {
@@ -418,6 +422,15 @@ img {
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.advantage-image {
+    flex-basis: 800px;
+    object-fit: cover;
+}
+
+.advantage-image--before {
+    order: -1
 }
 
 .advantage--with-icon {
@@ -463,15 +476,6 @@ img {
     line-height: 21px;
     text-align: center;
     color: var(--color-gray);
-}
-
-.advantage-image {
-    max-width: 800px;
-    object-fit: cover;
-}
-
-.advantage-image--before {
-    order: -1
 }
 
 .advantage-icon {

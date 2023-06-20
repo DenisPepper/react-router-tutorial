@@ -17,7 +17,7 @@ export const Advantage = (props: AdvantageProps) => {
 
     return (
         <li
-            className='advantage-item'
+            className={`advantage-item ${image ? 'advantage-item--imaged' : ''}`}
         >
             <div
                 className={`advantage ${Background[background]} ${descriptionUnderlined ? 'advantage--underlined' : 'advantage--with-icon'}`}>
