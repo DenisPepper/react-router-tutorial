@@ -414,7 +414,6 @@ img {
 }
 
 .advantage {
-    flex-basis: 400px;
     min-height: 385px;
     padding: 85px;
     display: flex;
@@ -425,7 +424,6 @@ img {
 }
 
 .advantage-image {
-    flex-basis: 800px;
     object-fit: cover;
 }
 
