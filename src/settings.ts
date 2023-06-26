@@ -213,3 +213,25 @@ export const userActions: IUserAction[] = [
         ariaLabel: 'Перейти на страницу избранных отелей',
     },
 ];
+
+type viewMode = 'grid' | 'display' | 'list';
+
+interface Mode {
+    mode: viewMode;
+    isChecked: boolean,
+}
+
+export const viewModes:Mode[] = [
+    {
+        mode: 'grid',
+        isChecked: true,
+    },
+    {
+        mode: 'display',
+        isChecked: false,
+    },
+    {
+        mode: 'list',
+        isChecked: false,
+    }
+];
