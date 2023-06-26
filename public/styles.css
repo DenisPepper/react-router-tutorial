@@ -840,45 +840,19 @@ img {
     gap: 20px;
 }
 
-.hotels-list li {
+.hotel-item {
     max-width: 340px;
     min-height: 438px;
     border: 1px solid #E6E6E6;
     border-radius: 4px;
     padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 'photo photo'
-                         'title title'
-                         'properties properties'
-                         'about add'
-                         'stras ratio';
-    gap: 16px;
-}
-
-.hotel-item {
-    width: 340px;
-    min-height: 438px;
-    padding: 20px;
-    border: 1px solid #E6E6E6;
-    border-radius: 4px;
-}
-
-.card {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.card-set {
-    width: 300px;
-    display: grid;
-    grid-template-columns: repeat(2, 140px);
-    gap: 20px;
-}
-
 .hotel-name {
-    grid-area: title;
+    flex-grow: 1;
     margin: 0;
     font-style: normal;
     font-weight: 700;
@@ -887,22 +861,24 @@ img {
 }
 
 .hotel-photo {
-    grid-area: photo;
+    order: -1;
+    display: block;
+    width: 300px;
+    height: 212px;
+    object-fit: cover;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.hotel-image {
-    order: -1;
-}
-
-.hotel-image img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+.hotel-properties-wrapper {
+    flex-grow: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 16px;
+    column-gap: 20px;
 }
 
 .hotel-properties {
-    grid-area: properties;
+    grid-column: 1 / -1;
     margin: 0;
     font-weight: 400;
     font-size: 18px;

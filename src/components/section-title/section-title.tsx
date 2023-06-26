@@ -10,10 +10,10 @@ export const SectionTitle = (props: SectionTitleProps) => {
 
     return (
         <>
-            <h2 className={`section-title ${cssClass}`}>
+            <h2 className={cssClass}>
                 {primaryHeader}
             </h2>
-            <p className={`section-subtitle ${cssClass}`}>
+            <p className={`section-subtitle`}>
                 {secondaryHeader}
             </p>
         </>
