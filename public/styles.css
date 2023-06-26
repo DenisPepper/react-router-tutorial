@@ -915,19 +915,14 @@ img {
 }
 
 .price-inputs {
+    width: 288px;
     display: flex;
     align-items: center;
     align-self: flex-start;
-    gap: 1px;
+    gap: 2px;
 }
 
-.price--from {
-    border-radius: 4px 0 0 4px;
-}
 
-.price--to {
-    border-radius: 0 4px 4px 0;
-}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -942,10 +937,19 @@ input[type=number] {
 }
 
 .price-input {
-    max-width: 143px;
+    min-width: 143px;
     padding: 12px 45px 12px 20px;
     border: none;
     background-color: var(--color-white-alter);
+}
+
+.price--from {
+    border-radius: 4px 0 0 4px;
+}
+
+.price--to {
+    margin-left: auto;
+    border-radius: 0 4px 4px 0;
 }
 
 .price-input:hover,
@@ -959,6 +963,7 @@ input[type=number] {
 
 .price-input,
 .price-label {
+    font-family: inherit;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
@@ -1211,6 +1216,7 @@ input[type=number] {
 }
 
 .sort-direction {
+    appearance: none;
     display: block;
     width: 292px;
     height: 49px;
@@ -1218,10 +1224,11 @@ input[type=number] {
     border: 2px solid var(--color-gray-lighter);
     padding: 12px 20px;
     margin-left: auto;
+    font-family: inherit;
     font-size: 18px;
     line-height: 21px;
     color: var(--color-gray);
-    appearance: none;
+
     background-image: url('./images/arrow-down.svg');
     background-repeat: no-repeat;
     background-position: right 20px center;
