@@ -1,24 +1,22 @@
 import {SectionTitle} from "../section-title/section-title";
+import {useLocation} from "react-router-dom";
+import {AppPath} from "../../settings";
+import {SubscribeForm} from "../subscribe-form/subscribe-form";
 
 export const Subscribe = () => {
+    const location = useLocation();
+
+    const cleared = location.pathname === AppPath.Catalog;
+
     return (
-        <section className='subscribe'>
+        <section className={`subscribe ${cleared ? 'subscribe--cleared' : ''}`}>
             <SectionTitle
-                cssClass='section-title--inverted'
+                cssClass={`${cleared ? 'section-title' : 'section-title--inverted'}`}
                 primaryHeader='Подпишитесь на рассылку'
                 secondaryHeader='Только полезная информация и никакого спама, честное бойскаутское!'
             />
 
-            <form
-                className="subscribe-form"
-                action="https://echo.htmlacademy.ru/"
-                method="post"
-            >
-                <label>
-                    <input type="email" placeholder="Ваш e-mail" required/>
-                </label>
-                <button className="subscribe-button" type="submit">Подписаться</button>
-            </form>
+            <SubscribeForm />
         </section>
     );
 }

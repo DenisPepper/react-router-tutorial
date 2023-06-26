@@ -499,11 +499,50 @@ img {
 .subscribe {
     width: 1200px;
     min-height: 415px;
-    padding: 96px 258px 104px;
+    padding: 96px 362px 104px;
     background-image: url('./images/subscribe.jpg');
     background-color: var(--background-color-fallback);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe--cleared {
+    background-image: none;
+    background-color: var(--color-white);
+}
+
+.subscribe-form-container {
+    padding-top: 54px;
+}
+
+.subscribe-form {
+    display: grid;
+    grid-template-columns: 452px 232px;
+    grid-template-rows: 52px;
+}
+
+.subscribe-input {
+    margin: 0;
+    padding: 14px 20px;
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    font-family: inherit;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 24px;
+}
+
+.subscribe-input--alter {
+    background-color: var(--color-white-alter);
+}
+
+.subscribe-button {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
 }
 
 .filter {
