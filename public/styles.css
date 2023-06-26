@@ -476,6 +476,11 @@ img {
     color: var(--color-gray);
 }
 
+.advantage-slogan span:after {
+    content: "\A";
+    white-space: pre;
+}
+
 .advantage-icon {
     position: absolute;
     top: 79px;
