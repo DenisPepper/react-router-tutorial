@@ -11,6 +11,7 @@
     --color-brown: #756157;
     --color-brown-alter: #615048;
     --color-brown-alter-2: #756257;
+    --color-brown-opacity-03: rgba(117, 97, 87, 0.3);
     --color-blue: #82B3D3;
     --color-blue-alter: #83B3D3;
     --color-blue-alter-2: #68A2CA;
@@ -774,7 +775,7 @@ img {
     display: grid;
     grid-template-columns: max-content 1fr max-content;
     justify-items: center;
-    align-items: center;
+    /*align-items: center;*/
 }
 
 .social-list {
@@ -789,7 +790,7 @@ img {
 
 .social-item {
     display: grid;
-    padding: 10px 10px 15px;
+    padding: 10px;
 }
 
 .social-link {
@@ -834,10 +835,38 @@ img {
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
+
 }
 
-.developer-image {
-    display: block;
+.phone:hover,
+.phone:focus-visible {
+    color: var(--color-brown);
+    outline: none;
+}
+
+.phone:active {
+    color: var(--color-brown-opacity-03);
+}
+
+.developer-link:focus-visible {
+    outline: none;
+}
+
+.developer-link {
+    align-self: center;
+}
+
+.developer-image path {
+    fill: var(--color-black);
+}
+
+.developer-link:hover path,
+.developer-link:focus-visible path {
+    fill: var(--color-brown);
+}
+
+.developer-link:active path {
+    fill: var(--color-brown-opacity-03);
 }
 
 .hotels-list {

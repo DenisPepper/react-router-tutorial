@@ -46,30 +46,3 @@ export const FooterSocial = () => {
         </section>
     );
 }
-
-/*
-
-<ul class="social">
-              <li class="social__item">
-                <a class="link" href="#" aria-label="Переход на страницу вконтатке">
-                  <svg width="20" height="20" aria-hidden="true">
-                    <use xlink:href="#icon-vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="link" href="#" aria-label="Переход на страницу pinterest">
-                  <svg width="20" height="20" aria-hidden="true">
-                    <use xlink:href="#icon-pinterest"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="link" href="#" aria-label="Переход на страницу reddit">
-                  <svg width="20" height="20" aria-hidden="true">
-                    <use xlink:href="#icon-reddit"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
- */
