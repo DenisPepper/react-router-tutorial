@@ -11,7 +11,7 @@ export const Subscribe = () => {
     return (
         <section className={`subscribe ${cleared ? 'subscribe--cleared' : ''}`}>
             <SectionTitle
-                cssClass={`${cleared ? 'section-title' : 'section-title--inverted'}`}
+                cssClass={`${cleared ? '' : 'title--inverted'}`}
                 primaryHeader='Подпишитесь на рассылку'
                 secondaryHeader='Только полезная информация и никакого спама, честное бойскаутское!'
             />
