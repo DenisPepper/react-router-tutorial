@@ -11,7 +11,7 @@ export const HotelCard = (props: HotelProps) => {
         <li className='hotel-item'>
             <h3 className='hotel-name'>{name}</h3>
 
-            <img className='hotel-photo' src={image} alt={`${type} ${name}`}/>
+            <img className='hotel-photo' src={image} alt={`${type} ${name}`} aria-hidden='true'/>
 
             <div className='hotel-properties-wrapper'>
 
