@@ -1196,7 +1196,7 @@ input[type=number] {
     min-width: 20px;
     height: 20px;
     border-radius: 9999px;
-    padding: 0 5px;
+    padding: 0 4px;
     font-size: 10px;
     line-height: 10px;
     color: var(--color-white);
@@ -1294,7 +1294,13 @@ input[type=number] {
 
 .sort-direction:hover,
 .sort-direction:focus-visible {
-    border: 2px solid var(--color-blue-alter-2);
+    border-color: var(--color-blue-alter-2);
+}
+
+.sort-direction:disabled {
+    border-color: var(--color-black);
+    color: var(--color-black);
+    opacity: 0.3;
 }
 
 .search-result {
