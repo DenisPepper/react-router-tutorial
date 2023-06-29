@@ -69,12 +69,6 @@ body {
     box-sizing: border-box;
 }
 
-*:focus-visible {
-    outline: 3px solid red;
-    /*outline: 3px solid var(--color-blue-alter);*/
-    outline-offset: 1px;
-}
-
 img {
     display: block;
     max-width: 100%;
@@ -994,8 +988,6 @@ img {
     gap: 2px;
 }
 
-
-
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -1008,20 +1000,28 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
+.price-input,
+.price-label {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--color-black);
+}
+
 .price-input {
-    min-width: 143px;
+    width: 143px;
     padding: 12px 45px 12px 20px;
     border: none;
     background-color: var(--color-white-alter);
 }
 
-.price--from {
-    border-radius: 4px 0 0 4px;
-}
-
-.price--to {
-    margin-left: auto;
-    border-radius: 0 4px 4px 0;
+.price-label {
+    font-weight: 400;
+    opacity: 0.3;
+    position: relative;
+    right: 20px;
+    margin-left: -18px;
 }
 
 .price-input:hover,
@@ -1033,25 +1033,13 @@ input[type=number] {
     outline: 3px solid var(--color-blue-alter);
 }
 
-.price-input,
-.price-label {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: var(--color-black);
+.price--from {
+    border-radius: 4px 0 0 4px;
 }
 
-.price-label {
-    font-weight: 400;
-    opacity: 0.3;
-    position: relative;
-    right: 20px;
-    margin-left: -18px;
-}
-
-.price-slider-wrapper {
-
+.price--to {
+    margin-left: auto;
+    border-radius: 0 4px 4px 0;
 }
 
 .price-slider-wrapper {
