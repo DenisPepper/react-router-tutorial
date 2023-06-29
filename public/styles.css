@@ -276,6 +276,19 @@ img {
 .main-navigation-link {
     text-decoration: none;
     color: inherit;
+    transition: opacity 200ms ease;
+}
+
+.main-navigation-link:hover {
+    opacity: 0.7;
+}
+
+.main-navigation-link:active {
+    opacity: 0.5;
+}
+
+.main-navigation-item--current > .main-navigation-link {
+    opacity: 1;
 }
 
 .user-menu {
