@@ -30,8 +30,8 @@ export const Filter = () => {
                     <div className='filter-set-wrapper'>
                         <Price />
                         <div className='price-slider-wrapper'>
-                            <div className='slider-element slider-point'></div>
-                            <div className='slider-element slider-point slider-point--second'></div>
+                            <button className='slider-element slider-point'></button>
+                            <button className='slider-element slider-point slider-point--second'></button>
                             <div className='slider-element slider-axis slider-axis--second'></div>
                             <div className='slider-element slider-axis'></div>
                         </div>
