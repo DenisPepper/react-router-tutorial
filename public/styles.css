@@ -7,6 +7,7 @@
     --color-white-alter: #F2F2F2;
     --color-white-alter-2: #E6E6E6;
     --color-white-opacity-03: rgba(255, 255, 255, 0.3);
+    --color-white-opacity-06: rgba(255, 255, 255, 0.6);
     --color-error: #FF5757;
     --color-brown: #756157;
     --color-brown-alter: #615048;
@@ -611,6 +612,18 @@ img {
     color: var(--color-white);
 }
 
+.breadcrumbs-link:visited {
+    color: inherit;
+}
+
+.breadcrumbs-link:hover {
+    color: var(--color-white-opacity-06);
+}
+
+.breadcrumbs-link:active {
+    color: var(--color-white-opacity-03);
+}
+
 .breadcrumbs-item:after {
     display: block;
     width: 8px;
@@ -620,24 +633,11 @@ img {
     background-size: contain;
     position: absolute;
     right: -18px;
-    top: 0;
+    top: 0.25em;
 }
 
 .breadcrumbs-item--current:after {
     display: none;
-}
-
-.main-page-link {
-    width: 20px;
-    height: 20px;
-}
-
-.main-page-link:before {
-    content: '';
-    display: block;
-    width: 12px;
-    height: 12px;
-    background: url('./images/home.svg') no-repeat;
 }
 
 .filter-form {
