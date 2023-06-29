@@ -68,6 +68,12 @@ body {
     box-sizing: border-box;
 }
 
+*:focus-visible {
+    outline: 3px solid red;
+    /*outline: 3px solid var(--color-blue-alter);*/
+    outline-offset: 1px;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -151,7 +157,6 @@ img {
 .app-button:hover,
 .app-button:focus-visible {
     background: var(--color-brown-alter);
-    outline: none;
 }
 
 .button--selected:hover,
@@ -233,6 +238,7 @@ img {
 }
 
 .header-logo {
+    align-self: stretch;
     min-width: 138px;
     margin-right: 30px;
     position: relative;
@@ -621,6 +627,11 @@ img {
     display: none;
 }
 
+.main-page-link {
+    width: 20px;
+    height: 20px;
+}
+
 .main-page-link:before {
     content: '';
     display: block;
@@ -811,10 +822,6 @@ img {
     position: relative;
 }
 
-.social-link:focus-visible {
-    outline: none;
-}
-
 .social-icon {
     position: absolute;
     inset: 0;
@@ -855,15 +862,10 @@ img {
 .phone:hover,
 .phone:focus-visible {
     color: var(--color-brown);
-    outline: none;
 }
 
 .phone:active {
     color: var(--color-brown-opacity-03);
-}
-
-.developer-link:focus-visible {
-    outline: none;
 }
 
 .developer-link {
@@ -1099,6 +1101,21 @@ input[type=number] {
     height: 60px;
 }
 
+.pagination-item--dotted {
+    text-align: center;
+}
+
+.pagination-item--dotted button {
+    margin: 0;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    cursor: pointer;
+    background-color: inherit;
+    position: relative;
+    top: 1em;
+}
+
 .pagination-link {
     width: 100%;
     height: 100%;
@@ -1119,8 +1136,6 @@ input[type=number] {
 .pagination-link:hover,
 .pagination-link:focus-visible {
     background-color: var(--color-blue-alter-2);
-    outline: 1px solid var(--color-blue);
-    outline-offset: 0;
 }
 
 .pagination-link:active {
@@ -1134,20 +1149,7 @@ input[type=number] {
 .pagination-link--current:active {
     background-color: var(--color-white-alter);
     color: var(--color-black);
-    outline: none;
     cursor: initial;
-}
-
-.pagination-link--dotted,
-.pagination-link--dotted:hover,
-.pagination-link--dotted:focus-visible,
-.pagination-link--dotted:active {
-
-    background: none;
-    color: var(--color-black);
-    font-size: 22px;
-    line-height: 26px;
-    outline: none;
 }
 
 .user-actions-menu {
@@ -1260,7 +1262,6 @@ input[type=number] {
     background-color: var(--color-white);
     background-repeat: no-repeat;
     background-position: center;
-    outline: none;
 }
 
 .view-mode:active,
@@ -1303,7 +1304,6 @@ input[type=number] {
     background-repeat: no-repeat;
     background-position: right 20px center;
     background-size: 12px 7px;
-    outline: none;
 }
 
 .sort-direction:hover,
