@@ -1,6 +1,6 @@
 export const FooterContacts = () => {
     return (
-        <address>
+        <address className='address'>
             <a
                 className="phone"
                 href="tel:+78128121212"

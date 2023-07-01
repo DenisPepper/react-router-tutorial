@@ -796,7 +796,8 @@ img {
     display: grid;
     grid-template-columns: max-content 1fr max-content;
     justify-items: center;
-   align-items: center;
+    align-items: center;
+    column-gap: 20px;
 }
 
 .social-list {
@@ -807,7 +808,7 @@ img {
     padding: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 5px;
+    row-gap: 15px;
 }
 
 .social-item {
@@ -845,6 +846,11 @@ img {
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.address {
+    display: grid;
+    row-gap: 10px;
 }
 
 .phone {
@@ -1262,7 +1268,7 @@ input[type=number] {
 
 .view-mode:active,
 .view-mode:hover,
-.view-mode--checked{
+.view-mode--checked {
     border-color: var(--color-black);
 }
 
