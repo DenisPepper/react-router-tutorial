@@ -75,10 +75,6 @@ img {
     height: auto;
 }
 
-address {
-    font-style: inherit;
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -852,6 +848,7 @@ address {
 }
 
 .phone {
+    font-style: normal;
     font-size: 40px;
     line-height: 40px;
     text-transform: uppercase;
