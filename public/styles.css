@@ -133,7 +133,10 @@ img {
     color: var(--color-white);
     background-color: var(--color-brown);
     text-transform: uppercase;
+    text-decoration: none;
     cursor: pointer;
+    display: grid;
+    place-content: center;
 }
 
 .button--selected {
