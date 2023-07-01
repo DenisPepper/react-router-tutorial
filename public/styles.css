@@ -75,6 +75,10 @@ img {
     height: auto;
 }
 
+address {
+    font-style: inherit;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -796,7 +800,7 @@ img {
     display: grid;
     grid-template-columns: max-content 1fr max-content;
     justify-items: center;
-    /*align-items: center;*/
+   align-items: center;
 }
 
 .social-list {
@@ -899,7 +903,7 @@ img {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 15px;
 }
 
 .hotel-name {
