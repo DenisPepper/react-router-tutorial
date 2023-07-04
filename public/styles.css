@@ -1375,6 +1375,7 @@ input[type=number] {
 }
 
 .modal__input {
+    align-self: start;
     border: none;
     border-radius: 4px;
     background-color: var(--color-white-alter);
@@ -1401,7 +1402,7 @@ input[type=number] {
     padding: 0;
     position: absolute;
     left: 157px;
-    top: 100%;
+    top: 48px;
     font-size: 16px;
     line-height: 21px;
 }
