@@ -1347,7 +1347,7 @@ input[type=number] {
 }
 
 .modal__form {
-    width: 577px;
+    width: 578px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 48px 88px;
@@ -1359,12 +1359,12 @@ input[type=number] {
 
     display: grid;
     align-items: center;
-    grid-template-columns: 137px 440px;
+    grid-template-columns: 135px auto;
 }
 
 .modal__field--short {
     grid-column: span 1;
-    grid-template-columns: 137px 110px;
+    grid-template-columns: 135px auto;
 }
 
 .modal__label {
@@ -1384,11 +1384,13 @@ input[type=number] {
 }
 
 .modal__input--text {
+    width: 440px;
     padding: 12px 20px;
     line-height: 24px;
 }
 
 .modal__input--number {
+    width: 110px;
     padding: 14px 10px;
     line-height: 20px;
     text-align: center;
