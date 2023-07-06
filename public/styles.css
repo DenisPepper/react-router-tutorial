@@ -1359,12 +1359,12 @@ input[type=number] {
 
     display: grid;
     align-items: center;
-    grid-template-columns: 135px auto;
+    grid-template-columns: 135px 440px;
 }
 
 .modal__field--short {
     grid-column: span 1;
-    grid-template-columns: 135px auto;
+    grid-template-columns: 135px 40px 30px 40px;
 }
 
 .modal__label {
@@ -1372,6 +1372,60 @@ input[type=number] {
     font-size: 20px;
     line-height: 24px;
     text-transform: capitalize;
+    display: inline-flex;
+}
+
+.modal__label-icon-container {
+    width: 26px;
+    height: 26px;
+    margin-left: 10px;
+    border-radius: 100%;
+    background-color: var(--color-blue-alter);
+    color: var(--color-white);
+    position: relative;
+}
+
+.modal__label-icon {
+    margin: auto;
+    position: absolute;
+    inset: 0;
+}
+
+.modal__tooltip {
+    width: 256px;
+    display: none;
+    border-radius: 10px;
+    padding: 15px 18px 18px 22px;
+    position: absolute;
+    top: 52px;
+    right: 46px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: none;
+    color: var(--color-white);
+    background-color: var(--color-gray);
+    box-shadow: 0 15px 30px 0 var(--color-black-opacity-03);
+}
+
+.modal__tooltip:after {
+    --size: 14px;
+    content: '';
+    display: none;
+    width: var(--size);
+    height: var(--size);
+    transform: translate(50%, -50%) rotate(-45deg);
+    transform-origin: center;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    background-color: var(--color-gray);
+
+}
+
+.modal__label-icon-container:hover + .modal__tooltip,
+.modal__label-icon-container:hover + .modal__tooltip:after {
+    display: block;
 }
 
 .modal__input {
@@ -1385,19 +1439,60 @@ input[type=number] {
 }
 
 .modal__input--text {
-    width: 440px;
     padding: 12px 20px;
     line-height: 24px;
 }
 
 .modal__input--number {
-    width: 110px;
+    grid-area: 1 / 2 / 2 / 5;
     padding: 14px 10px;
     line-height: 20px;
     text-align: center;
 }
 
+.count-button {
+    place-self: center;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    border: none;
+    border-radius: 4px;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    color: var(--color-brown-opacity-03);
+}
+
+.count-button:hover {
+    color: var(--color-black);
+}
+
+.count-button:focus-visible {
+    color: var(--color-black);
+    outline: 3px solid var(--color-blue-alter);
+}
+
+.count-button:active {
+    opacity: 0.2;
+    outline: none;
+}
+
+.count-button__icon {
+    position: absolute;
+    margin: auto;
+    inset: 0;
+}
+
+.increment-button {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.decrement-button {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
 .modal__input-state {
+    max-width: 400px;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -1405,6 +1500,9 @@ input[type=number] {
     top: 48px;
     font-size: 16px;
     line-height: 21px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .modal__input-state--error {
@@ -1421,12 +1519,30 @@ input[type=number] {
     margin: 0;
     padding: 0;
     border: none;
-    border-radius: 100%;
+    border-radius: 1000%;
     position: absolute;
     top: 64px;
     right: 52px;
     font-weight: bold;
     font-size: 12px;
     cursor: pointer;
+    background-color: var(--color-white-alter);
 }
 
+.modal__close-button-icon {
+    position: absolute;
+    margin: auto;
+    inset: 0;
+}
+
+.modal__close-button:hover {
+    background-color: var(--color-white-alter-2);
+}
+
+.modal__close-button:focus-visible {
+    outline: 3px solid var(--color-blue-alter);
+}
+
+.modal__close-button:active {
+    color: var(--color-black-opacity-03);
+}
