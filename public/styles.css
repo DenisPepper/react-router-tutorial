@@ -819,7 +819,6 @@ img {
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
-
 }
 
 .phone:hover,
@@ -847,6 +846,9 @@ img {
 .developer-link:active path {
     fill: var(--color-brown-opacity-03);
 }
+
+
+
 
 .hotels-list {
     margin: 0 0 80px 0;
