@@ -301,28 +301,6 @@ img {
     opacity: 1;
 }
 
-.search-button {
-    border: 0;
-    background-color: inherit;
-    cursor: pointer;
-}
-
-.search-button:before {
-    background-image: url('./images/search.svg');
-}
-
-.favorite-link-wrapper {
-    display: flex;
-}
-
-.favorite-link {
-    display: block;
-}
-
-.favorite-link:before {
-    background-image: url('./images/heart.svg');
-}
-
 .want-here-wrapper {
     margin-left: 20px;
 }
@@ -814,14 +792,6 @@ img {
 
 .social-link:active path {
     fill: var(--color-blue-opacity-03);
-}
-
-.search-button:before,
-.favorite-link:before {
-    content: '';
-    display: block;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .address {
