@@ -9,7 +9,7 @@ export const HotelSearch = () => {
                 secondaryHeader='Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне'
             />
             <AppButton
-                cssClass='hotel-search-open-popup app-button--large'
+                cssClass='hotel-search__open-popup-button app-button--large'
                 aria-label='открыть окно поиска отеля'
             >
                 Поиск гостиницы в седоне

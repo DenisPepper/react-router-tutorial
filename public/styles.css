@@ -474,10 +474,12 @@ img {
     padding: 96px 304px;
 }
 
-.hotel-search-open-popup {
+.hotel-search__open-popup-button {
     margin: 54px 108px 0;
     padding: 8px 50px;
 }
+
+/* Подписка */
 
 .subscribe {
     width: 1200px;
@@ -527,6 +529,9 @@ img {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 }
+
+
+
 
 .filter {
     max-width: 1200px;
