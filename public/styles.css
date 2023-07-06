@@ -531,27 +531,7 @@ img {
 }
 
 
-
-
-.filter {
-    max-width: 1200px;
-    min-height: 412px;
-    padding: 35px 70px 70px;
-    background-image: url('./images/filter-background.jpg');
-    background-color: var(--background-color-fallback);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: 1;
-}
-
-.catalog-page-title {
-    margin: 0 0 8px;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 78px;
-    color: var(--color-white);
-}
+/* Хлебные крошки */
 
 .breadcrumbs {
     margin: 0 0 40px;
@@ -597,6 +577,28 @@ img {
 
 .breadcrumbs-item--current:after {
     display: none;
+}
+
+.catalog-page-title {
+    margin: 0 0 8px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: var(--color-white);
+}
+
+/* Фильтр отелей */
+
+.filter {
+    max-width: 1200px;
+    min-height: 412px;
+    padding: 35px 70px 70px;
+    background-image: url('./images/filter-background.jpg');
+    background-color: var(--background-color-fallback);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
 }
 
 .filter-form {
@@ -750,6 +752,9 @@ img {
     box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
 }
+
+
+/* Футер страницы */
 
 .page-footer {
     min-height: var(--page-footer-min-height);
