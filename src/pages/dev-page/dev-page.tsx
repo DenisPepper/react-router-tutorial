@@ -126,12 +126,3 @@ export const DevPage = () => {
         </section>
     );
 }
-
-/*
-<button
-                        type='submit'
-                        className='app-button app-button--large button--optional modal__submit-button'
-                    >
-                        Найти
-                    </button>
- */

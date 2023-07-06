@@ -12,6 +12,7 @@ export const Subscribe = () => {
         <section className={`subscribe ${cleared ? 'subscribe--cleared' : ''}`}>
             <SectionTitle
                 cssClass={`${cleared ? '' : 'title--inverted'}`}
+                sccSubscribe='section-subtitle--subscribe'
                 primaryHeader='Подпишитесь на рассылку'
                 secondaryHeader='Только полезная информация и никакого спама, честное бойскаутское!'
             />

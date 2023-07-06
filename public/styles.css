@@ -24,6 +24,8 @@
     --color-green-alter: #6C9E42;
     --background-color-fallback: #808080;
 
+    --outline: 3px solid var(--color-blue-alter);
+
     --page-header-min-height: 64px;
     --page-footer-min-height: 120px;
 
@@ -188,7 +190,7 @@ img {
 .button--transparent:focus-visible {
     background: none;
     color: var(--color-white);;
-    border: 3px solid var(--color-blue-alter);
+    outline: var(--outline);
 }
 
 .button--transparent:disabled {
@@ -218,6 +220,10 @@ img {
     line-height: 26px;
     text-align: center;
     color: var(--color-gray);
+}
+
+.section-subtitle--subscribe {
+    width: 475px;
 }
 
 .title--inverted {
@@ -525,7 +531,7 @@ img {
 .subscribe {
     width: 1200px;
     min-height: 415px;
-    padding: 96px 362px 104px;
+    padding: 96px 258px;
     background-image: url('./images/subscribe.jpg');
     background-color: var(--background-color-fallback);
     background-repeat: no-repeat;
@@ -770,7 +776,7 @@ img {
 }
 
 .input:focus-visible + .input-icon {
-    outline: 3px solid var(--color-blue-alter);
+    outline: var(--outline);
     outline-offset: 1px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
@@ -1040,7 +1046,7 @@ input[type=number] {
 }
 
 .price-input:focus-visible {
-    outline: 3px solid var(--color-blue-alter);
+    outline: var(--outline);
 }
 
 .price--from {
@@ -1469,7 +1475,7 @@ input[type=number] {
 
 .count-button:focus-visible {
     color: var(--color-black);
-    outline: 3px solid var(--color-blue-alter);
+    outline: var(--outline);
 }
 
 .count-button:active {
@@ -1540,7 +1546,7 @@ input[type=number] {
 }
 
 .modal__close-button:focus-visible {
-    outline: 3px solid var(--color-blue-alter);
+    outline: var(--outline);
 }
 
 .modal__close-button:active {
