@@ -204,6 +204,8 @@ img {
     line-height: 36px;
 }
 
+/* Заголовок и подзагоовок секций */
+
 .section-title {
     margin: 0 0 20px 0;
     font-weight: 700;
@@ -230,6 +232,9 @@ img {
     color: var(--color-white);;
 }
 
+
+/* Хэдер приложения */
+
 .page-header {
     min-height: var(--page-header-min-height);
     grid-area: header;
@@ -249,7 +254,6 @@ img {
 }
 
 .header-logo img {
-    display: block;
     width: 140px;
     height: 70px;
     position: absolute;
@@ -301,19 +305,14 @@ img {
     opacity: 1;
 }
 
-.want-here-wrapper {
-    margin-left: 20px;
-}
-
-.user-menu-open-popup {
-    width: 160px;
-    padding: 8px 34px;
-}
+/* Контейнер с основным контентом */
 
 .page-content {
     min-height: calc(100vh - var(--page-header-min-height) - var(--page-footer-min-height));
     grid-area: content;
 }
+
+/* Баннер на главной странице */
 
 .hero {
     min-height: 485px;
@@ -326,7 +325,6 @@ img {
 }
 
 .hero-image {
-    display: block;
     margin: 0 auto;
 }
 
@@ -360,6 +358,9 @@ img {
     right: 250px;
     border-left: 350px solid transparent;
 }
+
+
+/* Преимущества */
 
 .advantages-list {
     margin: 0;
