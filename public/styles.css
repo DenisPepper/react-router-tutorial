@@ -384,7 +384,7 @@ img {
     padding: 69px 274px;
 }
 
-.advantages-title-1 .section-title {
+.advantages-title-1 > .section-title {
     margin-bottom: 25px;
 }
 
@@ -464,6 +464,8 @@ img {
     position: absolute;
     top: 79px;
 }
+
+/* Поиск гостинц*/
 
 .hotel-search {
     display: flex;
